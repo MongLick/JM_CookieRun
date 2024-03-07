@@ -6,7 +6,7 @@ public class Scroller : MonoBehaviour
 {
     [SerializeField] Transform[] children; // 자식 몇 개 있는지 확인하는 배열
     [SerializeField] float scrollSpeed; // 배경이 움직이는 속도
-    [SerializeField] float offset; // 배경이 얼마나 멀어지면 다시오는지?
+    [SerializeField] float offset; // 배경이 얼마나 멀어지면 다시오는지
 
     private void Update()
     {

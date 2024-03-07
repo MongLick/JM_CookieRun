@@ -7,7 +7,7 @@
             "actions": [
                 {
                     "name": "Jump",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "18e7f88c-4920-43ab-ad19-aa4524bab22a",
                     "expectedControlType": "Button",
                     "processors": "",

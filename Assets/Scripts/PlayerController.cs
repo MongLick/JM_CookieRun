@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -18,58 +20,67 @@ public class PlayerController : MonoBehaviour
     [Header("Events")]
     public UnityEvent OnDied; // 죽었을 때 여러가지 작업하기 위해 이벤트로 구현
 
-    private bool isJumping;
-    private int jumpCount;
+    private bool isJumping; // 점프중인지 체크
+    private int jumpCount; // 점프 1번 하면 ++이 됨
 
-    private void Jump() // 점프하면 호출
+    private bool isSliding = false; // 슬라이드중인지 체크
+
+    public void Jump() // 점프하면 호출
     {
-        isJumping = true;
-        rigid.velocity = Vector2.up * jumpPower; // 점프 기능
-        animator.SetBool("Jump", true);
-        jumpCount++;
-        if(Input.GetKey(KeyCode.Space) && jumpCount < 2) // 이거 부터 수정해야함. 너무 피곤함
+        if (isJumping == false && isSliding == false) // 점프중이 아니고 슬라이드 중이 아닐 때
         {
-            rigid.velocity = Vector2.up * jumpPower;
-            animator.SetBool("DoubleJump", true);
-            animator.SetBool("Jump", false);
+            if (jumpCount == 0) // 점프 카운터 0일 때 실행
+            {
+                rigid.velocity = Vector2.up * jumpPower; // 점프 높이
+                animator.SetBool("Jump", true); // 애니메이터에서 true로 바꿔줌
+                jumpCount++; // 점프 카운터 ++
+            }
+            
+            else if (jumpCount == 1) // 점프 카운터 1일 때 실행
+            {
+                isJumping = true; // 점프 중 공중에서 점프하는거 막는 코드
+                rigid.velocity = Vector2.up * jumpPower; // 점프 높이
+                animator.SetBool("DoubleJump", true); // 애니메이터에서 true로 바꿔줌
+                animator.SetBool("Jump", false); // 애니메이터에서 false로 바꿔줌
+            }
         }
     }
 
     private void OnJump(InputValue value) // 한 번 누르면 실행
     {
-        if(value.isPressed && isJumping == false) // 한 번 누름
+        if (value.isPressed) // 눌렸을 때 호출 인풋 액션도 사용하기 위해 만든거임
         {
             Jump(); // 점프 함수 호출
         }
     }
 
+    public void SlideStart() // 슬라이드 시작
+    {
+        animator.SetBool("Slide", true); // 애니메이터에서 true로 바꿔줌
+        isSliding = true; // 슬라이드중
+
+        this.boxCollider.enabled = true; // 박스 콜라이더 온 
+        this.capsuleCollider.enabled = false; // 캡슐 콜라이더 오프
+    }
+
+    public void SlideEnd() // 슬라이드 끝
+    {
+        animator.SetBool("Slide", false); // 애니메이터에서 false로 바꿔줌
+        isSliding = false; // 슬라이드중이 아님
+
+        this.capsuleCollider.enabled = true; // 캡슐 콜라이더 오프
+        this.boxCollider.enabled = false; // 박스 콜라이더 온
+    }
+
     private void OnSlide(InputValue value) // 인풋 액션에서 눌렀는지 떼었는지 알려줌
     {
-        if (value.isPressed) // 눌림
+        if (value.isPressed) // 누름
         {
-            animator.SetBool("Slide", true); // 애니메이터에서 true로 바꿔줌
-
-            //this.boxCollider.enabled = true; // 이거 왜 안 되는지 모르겠음 밑에 3개 전부 다 안 됨
-            //this.capsuleCollider.enabled = false;
-
-            //boxCollider.gameObject.SetActive(true);
-            //capsuleCollider.gameObject.SetActive(false);
-
-            //gameObject.GetComponent<CapsuleCollider>().enabled = false; 
-            //gameObject.GetComponent<BoxCollider>().enabled = true;
+            SlideStart(); // Start 함수 호출
         }
-        else // 떼짐
+        else // 안 누름
         {
-            animator.SetBool("Slide", false); // 애니메이터에서 false로 바꿔줌
-
-            //this.boxCollider.enabled = false;
-            //this.capsuleCollider.enabled = true;
-
-            //boxCollider.gameObject.SetActive(false);
-            //capsuleCollider.gameObject.SetActive(true);
-
-            //gameObject.GetComponent<CapsuleCollider>().enabled = true;
-            //gameObject.GetComponent<BoxCollider>().enabled = false;
+            SlideEnd(); // End 함수 호출
         }
     }
 
@@ -79,18 +90,17 @@ public class PlayerController : MonoBehaviour
         OnDied?.Invoke(); // 이벤트로 여러가지 작업 하려고 만듬 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) // 뭐가 닿았으면 태그 형식으로 수정해야함
+    private void OnCollisionEnter2D(Collision2D collision) // 뭐가 닿았으면 호출
     {
-        switch(collision.gameObject.name)
+        if (collision.gameObject.tag.CompareTo("Ground") == 0) // 뭐가 닿았으면
         {
-            case "Ground":
-                isJumping = false;
-                animator.SetBool("Jump", false);
-                jumpCount = 0;
-                animator.SetBool("DoubleJump", false);
-                break;
+            isJumping = false; // 점프를 안 하고 있다로 변경됨
+            animator.SetBool("Jump", false); // 점프 애니메이션 꺼줌
+            jumpCount = 0; // 점프 카운터 초기화
+            animator.SetBool("DoubleJump", false); // // 더블점프 애니메이션 꺼줌
         }
         // Die(); // Die 함수 호출
 
     }
+
 }
