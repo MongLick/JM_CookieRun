@@ -50,7 +50,11 @@ public class PlayerController : MonoBehaviour
     {
         if (value.isPressed) // 눌렸을 때 호출 인풋 액션도 사용하기 위해 만든거임
         {
-            Jump(); // 점프 함수 호출
+            if(isSliding == false)
+            {
+               Jump();
+            }
+            // 점프 함수 호출
         }
     }
 
@@ -74,11 +78,11 @@ public class PlayerController : MonoBehaviour
 
     private void OnSlide(InputValue value) // 인풋 액션에서 눌렀는지 떼었는지 알려줌
     {
-        if (value.isPressed) // 누름
+        if (value.isPressed && isJumping == false) // 누름
         {
             SlideStart(); // Start 함수 호출
         }
-        else // 안 누름
+        else if(isJumping == false)// 안 누름
         {
             SlideEnd(); // End 함수 호출
         }
