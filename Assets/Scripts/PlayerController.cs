@@ -6,6 +6,8 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
+public enum ButtonType { None, Slide, Jump}
+
 public class PlayerController : MonoBehaviour
 {
     [Header("Components")]
@@ -20,14 +22,14 @@ public class PlayerController : MonoBehaviour
     [Header("Events")]
     public UnityEvent OnDied; // 죽었을 때 여러가지 작업하기 위해 이벤트로 구현
 
+    public UnityEvent<ButtonType> OnButtonEvent;
+
     private bool isJumping; // 점프중인지 체크
     private int jumpCount; // 점프 1번 하면 ++이 됨
 
-    private bool isSliding = false; // 슬라이드중인지 체크
-
     public void Jump() // 점프하면 호출
     {
-        if (isJumping == false && isSliding == false) // 점프중이 아니고 슬라이드 중이 아닐 때
+        if (isJumping == false) // 점프중이
         {
             if (jumpCount == 0) // 점프 카운터 0일 때 실행
             {
@@ -35,7 +37,7 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("Jump", true); // 애니메이터에서 true로 바꿔줌
                 jumpCount++; // 점프 카운터 ++
             }
-            
+
             else if (jumpCount == 1) // 점프 카운터 1일 때 실행
             {
                 isJumping = true; // 점프 중 공중에서 점프하는거 막는 코드
@@ -50,18 +52,19 @@ public class PlayerController : MonoBehaviour
     {
         if (value.isPressed) // 눌렸을 때 호출 인풋 액션도 사용하기 위해 만든거임
         {
-            if(isSliding == false)
-            {
-               Jump();
-            }
-            // 점프 함수 호출
+            SlideEnd();
+            Jump(); // 점프 함수 호출
+            OnButtonEvent?.Invoke(ButtonType.Jump);
+        }
+        else
+        {
+            OnButtonEvent?.Invoke(ButtonType.None);
         }
     }
 
     public void SlideStart() // 슬라이드 시작
     {
         animator.SetBool("Slide", true); // 애니메이터에서 true로 바꿔줌
-        isSliding = true; // 슬라이드중
 
         this.boxCollider.enabled = true; // 박스 콜라이더 온 
         this.capsuleCollider.enabled = false; // 캡슐 콜라이더 오프
@@ -70,7 +73,6 @@ public class PlayerController : MonoBehaviour
     public void SlideEnd() // 슬라이드 끝
     {
         animator.SetBool("Slide", false); // 애니메이터에서 false로 바꿔줌
-        isSliding = false; // 슬라이드중이 아님
 
         this.capsuleCollider.enabled = true; // 캡슐 콜라이더 오프
         this.boxCollider.enabled = false; // 박스 콜라이더 온
@@ -78,13 +80,16 @@ public class PlayerController : MonoBehaviour
 
     private void OnSlide(InputValue value) // 인풋 액션에서 눌렀는지 떼었는지 알려줌
     {
-        if (value.isPressed && isJumping == false) // 누름
+        if (value.isPressed) // 누름
         {
+
             SlideStart(); // Start 함수 호출
+            OnButtonEvent?.Invoke(ButtonType.Slide);
         }
-        else if(isJumping == false)// 안 누름
+        else
         {
             SlideEnd(); // End 함수 호출
+            OnButtonEvent?.Invoke(ButtonType.None);
         }
     }
 
@@ -104,7 +109,5 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("DoubleJump", false); // // 더블점프 애니메이션 꺼줌
         }
         // Die(); // Die 함수 호출
-
     }
-
 }

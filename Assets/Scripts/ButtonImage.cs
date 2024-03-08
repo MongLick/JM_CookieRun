@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.U2D;
 using UnityEngine.UI;
 
 public class ButtonImage : MonoBehaviour
@@ -12,40 +13,61 @@ public class ButtonImage : MonoBehaviour
 
     private int index;
 
+    private bool JumpSlide = false;
+    private bool SlideJump = false;
+
     void Start()
     {
         image = GetComponent<Image>();
     }
 
-    void Update()
+    public void OnNone()
     {
-        if (Input.GetKey(KeyCode.Space))
+        index = 0;
+        image.sprite = sprites[index];
+        JumpSlide = false;
+        SlideJump = false;
+    }
+
+    public void OnJump()
+    {
+        index = 1;
+        image.sprite = sprites[index];
+        JumpSlide = true;
+        SlideJump = false;
+    }
+
+    public void OnSlide()
+    {
+        if (JumpSlide == false)
         {
-            if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
-                return;
-
-            index = 0;
-            image.sprite = sprites[index];
-        }
-
-        else if (Input.GetKeyUp(KeyCode.Space))
-        {
-            index = 1;
-            image.sprite = sprites[index];
-        }
-
-        else if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
-        {
-            if (Input.GetKey(KeyCode.Space))
-                return;
-
             index = 2;
             image.sprite = sprites[index];
+            SlideJump = true;
         }
-        else if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.RightShift))
+        if (JumpSlide == true)
         {
             index = 3;
             image.sprite = sprites[index];
+            SlideJump = false;
+        }    
+    }
+
+    public void ChangeButton(ButtonType type)
+    {
+        switch (type)
+        {
+            case ButtonType.None:
+                OnNone();
+                break;
+
+            case ButtonType.Jump:
+                OnJump();
+                break;
+
+            case ButtonType.Slide:
+                OnSlide();
+                break;
         }
     }
 }
