@@ -36,6 +36,7 @@ public class SceneManager : Singleton<SceneManager>
 
     IEnumerator LoadingRoutine(string sceneName)
     {
+        fade.gameObject.SetActive(true);
         yield return FadeOut();
 
         Manager.Pool.ClearPool();
@@ -43,6 +44,8 @@ public class SceneManager : Singleton<SceneManager>
         Manager.UI.ClearPopUpUI();
         Manager.UI.ClearWindowUI();
         Manager.UI.CloseInGameUI();
+        Manager.UI.ChangeInGameUI();
+
 
         Time.timeScale = 0f;
         loadingBar.gameObject.SetActive(true);
@@ -54,6 +57,8 @@ public class SceneManager : Singleton<SceneManager>
             yield return null;
         }
 
+        Manager.UI.EnsureEventSystem();
+
         BaseScene curScene = GetCurScene();
         yield return curScene.LoadingRoutine();
 
@@ -61,12 +66,13 @@ public class SceneManager : Singleton<SceneManager>
         Time.timeScale = 1f;
 
         yield return FadeIn();
+        fade.gameObject.SetActive(false);
     }
 
     IEnumerator FadeOut()
     {
         float rate = 0;
-        Color fadeOutColor = new Color(fade.color.r, fade.color.g, fade.color.b, 1f);
+        Color fadeOutColor = new Color(fade.color.r, fade.color.g, fade.color.b, 0f);
         Color fadeInColor = new Color(fade.color.r, fade.color.g, fade.color.b, 0f);
 
         while (rate <= 1)
@@ -80,7 +86,7 @@ public class SceneManager : Singleton<SceneManager>
     IEnumerator FadeIn()
     {
         float rate = 0;
-        Color fadeOutColor = new Color(fade.color.r, fade.color.g, fade.color.b, 1f);
+        Color fadeOutColor = new Color(fade.color.r, fade.color.g, fade.color.b, 0f);
         Color fadeInColor = new Color(fade.color.r, fade.color.g, fade.color.b, 0f);
 
         while (rate <= 1)

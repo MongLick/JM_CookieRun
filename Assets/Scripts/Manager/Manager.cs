@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public static class Manager
+public class Manager : MonoBehaviour
 {
     public static GameManager Game { get { return GameManager.Instance; } }
     public static DataManager Data { get { return DataManager.Instance; } }

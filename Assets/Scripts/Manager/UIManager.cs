@@ -16,6 +16,8 @@ public class UIManager : Singleton<UIManager>
     private float prevTimeScale;
     private InGameUI curInGameUI;
 
+    [SerializeField] GameObject image;
+
     private void Start()
     {
         EnsureEventSystem();
@@ -118,5 +120,13 @@ public class UIManager : Singleton<UIManager>
         inGameBlocker.gameObject.SetActive(false);
         Destroy(curInGameUI.gameObject);
         curInGameUI = null;
+    }
+
+    public void ChangeInGameUI()
+    {
+        image = GameObject.Find("MainImage");
+        if (image == null)
+            return;
+        image.SetActive(false);
     }
 }

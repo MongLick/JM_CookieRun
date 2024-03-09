@@ -3,21 +3,12 @@
     "maps": [
         {
             "name": "Player",
-            "id": "5cbcbc10-404a-4d64-8f25-7f8948b13fd7",
+            "id": "1830f6d1-f8f7-4bfd-8325-c7c02813af95",
             "actions": [
                 {
                     "name": "Jump",
-                    "type": "PassThrough",
-                    "id": "18e7f88c-4920-43ab-ad19-aa4524bab22a",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Slide",
-                    "type": "PassThrough",
-                    "id": "2d2a5b77-af70-4863-9785-cf8baeedbc57",
+                    "type": "Button",
+                    "id": "1b9e0ab4-4032-4898-b6df-61a774cea3f6",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -27,23 +18,12 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "56655f46-747a-4d13-80c9-313134ad074b",
+                    "id": "f25b45b6-9542-43c6-92c7-ea54e82b3a75",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "0c0f8ac4-6e9f-4779-9813-c3822447b87e",
-                    "path": "<Keyboard>/shift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Slide",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
