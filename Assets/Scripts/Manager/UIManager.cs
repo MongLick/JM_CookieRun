@@ -128,5 +128,9 @@ public class UIManager : Singleton<UIManager>
         if (image == null)
             return;
         image.SetActive(false);
+        image = GameObject.Find("GameStartButton");
+        if (image == null)
+            return;
+        image.SetActive(false);
     }
 }
