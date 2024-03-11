@@ -124,6 +124,10 @@ public class UIManager : Singleton<UIManager>
 
     public void ChangeInGameUI()
     {
+        image = GameObject.Find("LetterImage");
+        if (image == null)
+            return;
+        image.SetActive(false);
         image = GameObject.Find("MainImage");
         if (image == null)
             return;

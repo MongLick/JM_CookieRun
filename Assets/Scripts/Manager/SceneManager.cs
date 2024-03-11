@@ -43,12 +43,83 @@ public class SceneManager : Singleton<SceneManager>
         Manager.Sound.StopSFX();
         Manager.UI.ClearPopUpUI();
         Manager.UI.ClearWindowUI();
+
+        BaseScene curScene = GetCurScene();
+
+        yield return FadeIn();
+        fade.gameObject.SetActive(false);
+
+        curScene.OnLoadingEnd();
+
+        Time.timeScale = 0f;
+        loadingBar.gameObject.SetActive(true);
+
+        AsyncOperation oper = UnitySceneManager.LoadSceneAsync(sceneName);
+        while (oper.isDone == false)
+        {
+            loadingBar.value = oper.progress;
+            yield return null;
+        }
+
+        Manager.UI.EnsureEventSystem();
+
+        loadingBar.gameObject.SetActive(false);
+        Time.timeScale = 1f;
+
+        
+        yield return curScene.LoadingRoutine();
+    }
+
+    IEnumerator FadeOut()
+    {
+        float rate = 0;
+        Color fadeOutColor = new Color(fade.color.r, fade.color.g, fade.color.b, 1f);
+        Color fadeInColor = new Color(fade.color.r, fade.color.g, fade.color.b, 0f);
+
+        while (rate <= 1)
+        {
+            rate += Time.deltaTime / fadeTime;
+            fade.color = Color.Lerp(fadeInColor, fadeOutColor, rate);
+            yield return null;
+        }
+    }
+
+    IEnumerator FadeIn()
+    {
+        
+        float rate = 0;
+        Color fadeOutColor = new Color(fade.color.r, fade.color.g, fade.color.b, 1f);
+        Color fadeInColor = new Color(fade.color.r, fade.color.g, fade.color.b, 1f);
+        
+
+        while (rate <= 1)
+        {
+            rate += Time.deltaTime / fadeTime;
+            fade.color = Color.Lerp(fadeOutColor, fadeInColor, rate);
+            yield return null;
+        }
+    }
+
+    public void LoadScene2(string sceneName)
+    {
+        StartCoroutine(LoadingRoutine2(sceneName));
+    }
+
+    IEnumerator LoadingRoutine2(string sceneName)
+    {
+        fade.gameObject.SetActive(true);
+        yield return FadeOut2();
+
+        Manager.Pool.ClearPool();
+        Manager.Sound.StopSFX();
+        Manager.UI.ClearPopUpUI();
+        Manager.UI.ClearWindowUI();
         Manager.UI.CloseInGameUI();
         Manager.UI.ChangeInGameUI();
 
 
         Time.timeScale = 0f;
-        loadingBar.gameObject.SetActive(true);
+        //loadingBar.gameObject.SetActive(true);
 
         AsyncOperation oper = UnitySceneManager.LoadSceneAsync(sceneName);
         while (oper.isDone == false)
@@ -65,11 +136,11 @@ public class SceneManager : Singleton<SceneManager>
         loadingBar.gameObject.SetActive(false);
         Time.timeScale = 1f;
 
-        yield return FadeIn();
+        yield return FadeIn2();
         fade.gameObject.SetActive(false);
     }
 
-    IEnumerator FadeOut()
+    IEnumerator FadeOut2()
     {
         float rate = 0;
         Color fadeOutColor = new Color(fade.color.r, fade.color.g, fade.color.b, 0f);
@@ -83,7 +154,7 @@ public class SceneManager : Singleton<SceneManager>
         }
     }
 
-    IEnumerator FadeIn()
+    IEnumerator FadeIn2()
     {
         float rate = 0;
         Color fadeOutColor = new Color(fade.color.r, fade.color.g, fade.color.b, 0f);

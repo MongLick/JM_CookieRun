@@ -6,7 +6,7 @@ public class TitleScene : BaseScene
 {
     public void GameSceneLoad()
     {
-        Manager.Scene.LoadScene("GameScene");
+        Manager.Scene.LoadScene2("GameScene");
     }
 
     public override IEnumerator LoadingRoutine()
