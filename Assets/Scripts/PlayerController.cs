@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
         {
             if (jumpCount == 0) // 점프 카운터 0일 때 실행
             {
+                animator.SetBool("Slide", false);
                 rigid.velocity = Vector2.up * jumpPower; // 점프 높이
                 animator.SetBool("Jump", true); // 애니메이터에서 true로 바꿔줌
                 jumpCount++; // 점프 카운터 ++
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour
 
             else if (jumpCount == 1) // 점프 카운터 1일 때 실행
             {
+                animator.SetBool("Slide", false);
                 isJumping = true; // 점프 중 공중에서 점프하는거 막는 코드
                 rigid.velocity = Vector2.up * jumpPower; // 점프 높이
                 animator.SetBool("DoubleJump", true); // 애니메이터에서 true로 바꿔줌

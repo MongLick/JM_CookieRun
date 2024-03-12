@@ -15,6 +15,5 @@ public class LogoLoader : MonoBehaviour
         GameObject gameObject = transform.GetChild(1).gameObject;
         gameObject.SetActive(true);
         yield return new WaitForSeconds(1.5f);
-        Application.LoadLevel(1);
     }
 }

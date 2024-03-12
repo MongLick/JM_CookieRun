@@ -3,7 +3,26 @@ guid: d4fcfa33b2f5d5e47b5fc920f8e1da03
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - DoubleJumpObstacle: {instanceID: 0}
+  - GoldCoin: {instanceID: 0}
+  - GoldCoinEffect: {instanceID: 0}
+  - Growing: {instanceID: 0}
+  - JumpObstacle: {instanceID: 0}
+  - Magnet: {instanceID: 0}
+  - MakeCoin: {instanceID: 0}
+  - MakeJelly: {instanceID: 0}
+  - PinkJelly: {instanceID: 0}
+  - PinkJellyEffect: {instanceID: 0}
+  - Potion: {instanceID: 0}
+  - ResumeUI: {instanceID: 0}
+  - RunningEffect: {instanceID: 0}
+  - RunningFast: {instanceID: 0}
+  - SilverCoin: {instanceID: 0}
+  - SilverCoinEffect: {instanceID: 0}
+  - SildeObstacle: {instanceID: 0}
+  - YellowJelly: {instanceID: 0}
+  - YellowJellyEffect: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
