@@ -1,0 +1,1009 @@
+fileFormatVersion: 2
+guid: 5c8f5181792aa1448ac24ca43cc45a3b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_0
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 667
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574243632eae3094fb76295ab24aeb8c
+      internalID: -751223677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_1
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 667
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c65bb66e77d7841afe87b035128b50
+      internalID: -1880570470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_2
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 671
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f95bff56a435db64381db8dd94113370
+      internalID: 1631632135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_3
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 671
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c30c5e7b89f4e408cb092303bf11b9
+      internalID: -264615786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_4
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 671
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e4dbfeb61fce2468111a33231a16cb
+      internalID: -186512731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_5
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 671
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e173083fc42099c4cbc288c7218d51e5
+      internalID: -1613457932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_6
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 1116
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dba4ffe060fb2b4b97c2542efe881ab
+      internalID: -1640162863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_7
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 660
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b7eabf0b9dd844887c280d9600b334
+      internalID: -733360949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_8
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 660
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f65c10709ed33d44892055131401b337
+      internalID: -1807584941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_9
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 660
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cdbe8c5e8d566744aa0475a406bdd23
+      internalID: 981022783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_10
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 660
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460b550bc8bd2c240a95387d47ad2f42
+      internalID: 1451001164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_11
+      rect:
+        serializedVersion: 2
+        x: 2051
+        y: 660
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8912af1adbfb6da408a643db493bf02b
+      internalID: -1665982631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_12
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 660
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c235c116842cab24b8c8ffa72a18f8fc
+      internalID: 906080641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1207
+        width: 161
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36b1d233e2797b4c9caf259e89c2b44
+      internalID: -228876349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_14
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1206
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6ad57eeacfbb140a014595c737b71f
+      internalID: 169838829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_16
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 1206
+        width: 160
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512b10bb2a8813f42bd5e6c517c4d1c5
+      internalID: 1622642576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_15
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1206
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc510a80c25fe344899ac8c3a9c3a859
+      internalID: -2116532590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_18
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 1116
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc12767f15e29674a93c0f13b76e235c
+      internalID: -1321420149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_17
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 1116
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686955eb752d26241b3bbb0813fcbc06
+      internalID: 1199357525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_19
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1116
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba2c5cb65950144ba20335f8580a77d
+      internalID: -1037327683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_20
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 1116
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 571e031cc16ecda4da0be8d5542e0c22
+      internalID: -1786600175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_21
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 1116
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c79676be5ff51648930345ce1662552
+      internalID: 1534963436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_22
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 1116
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b1677ed23718b4587ea1fefda02be7
+      internalID: 1644154920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_23
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1116
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ff0d26f619d9b45b921f186e96f05e
+      internalID: -1132234136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1014
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12df2d3ce16f9bd4493ac28c60aa8d04
+      internalID: 13446945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_26
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 1014
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4045ac86b0be20549b339945cfa126a7
+      internalID: 1465496190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_25
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1014
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e560fcd5ec03547bba44bfdb22cab3
+      internalID: -2035355652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_27
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1014
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2461fcb052fee294284089e1bdcd7d88
+      internalID: -432888090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_28
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1014
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5cfd62849af992479e7c6f1aa2ad03f
+      internalID: 1544831017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_29
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1014
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ffda6b82e75bc4b8831f74a10b09f0
+      internalID: -1835359346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_30
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1014
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fa6c724a38982449adc3b0f0e602d1
+      internalID: 630172897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_31
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1014
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ed10700affece45bfd4070ffede4e7
+      internalID: -650959466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_32
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1014
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c26f8c4920ba74e868dc0f3a325501
+      internalID: -366432681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_33
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1014
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e7f9a32bbf9a54f8296dc5db467350
+      internalID: -1996747777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_34
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 1014
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca290f1bbc705c4680749f17f5ff780
+      internalID: 1677816857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_35
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 1014
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e2d8918391ace46b4263b9916e2450
+      internalID: -730823239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_36
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 1014
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b94aec1e1a2e34988db5c9ae085ea8
+      internalID: -1469915176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_37
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1014
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b3ad7a8855ca8478ae445094a90927
+      internalID: -941598433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_38
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1014
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9b27a0bfd04d14aa2d36404fa77d3a
+      internalID: -168881358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run - General Jellies_39
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 1014
+        width: 86
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc68e34f6d4acd348a79c8e7750411e1
+      internalID: -1393141154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Mobile - Cookie Run - General Jellies_0: -751223677
+      Mobile - Cookie Run - General Jellies_1: -1880570470
+      Mobile - Cookie Run - General Jellies_10: 1451001164
+      Mobile - Cookie Run - General Jellies_11: -1665982631
+      Mobile - Cookie Run - General Jellies_12: 906080641
+      Mobile - Cookie Run - General Jellies_13: -228876349
+      Mobile - Cookie Run - General Jellies_14: 169838829
+      Mobile - Cookie Run - General Jellies_15: -2116532590
+      Mobile - Cookie Run - General Jellies_16: 1622642576
+      Mobile - Cookie Run - General Jellies_17: 1199357525
+      Mobile - Cookie Run - General Jellies_18: -1321420149
+      Mobile - Cookie Run - General Jellies_19: -1037327683
+      Mobile - Cookie Run - General Jellies_2: 1631632135
+      Mobile - Cookie Run - General Jellies_20: -1786600175
+      Mobile - Cookie Run - General Jellies_21: 1534963436
+      Mobile - Cookie Run - General Jellies_22: 1644154920
+      Mobile - Cookie Run - General Jellies_23: -1132234136
+      Mobile - Cookie Run - General Jellies_24: 13446945
+      Mobile - Cookie Run - General Jellies_25: -2035355652
+      Mobile - Cookie Run - General Jellies_26: 1465496190
+      Mobile - Cookie Run - General Jellies_27: -432888090
+      Mobile - Cookie Run - General Jellies_28: 1544831017
+      Mobile - Cookie Run - General Jellies_29: -1835359346
+      Mobile - Cookie Run - General Jellies_3: -264615786
+      Mobile - Cookie Run - General Jellies_30: 630172897
+      Mobile - Cookie Run - General Jellies_31: -650959466
+      Mobile - Cookie Run - General Jellies_32: -366432681
+      Mobile - Cookie Run - General Jellies_33: -1996747777
+      Mobile - Cookie Run - General Jellies_34: 1677816857
+      Mobile - Cookie Run - General Jellies_35: -730823239
+      Mobile - Cookie Run - General Jellies_36: -1469915176
+      Mobile - Cookie Run - General Jellies_37: -941598433
+      Mobile - Cookie Run - General Jellies_38: -168881358
+      Mobile - Cookie Run - General Jellies_39: -1393141154
+      Mobile - Cookie Run - General Jellies_4: -186512731
+      Mobile - Cookie Run - General Jellies_40: 794031381
+      Mobile - Cookie Run - General Jellies_41: -711566586
+      Mobile - Cookie Run - General Jellies_5: -1613457932
+      Mobile - Cookie Run - General Jellies_6: -1640162863
+      Mobile - Cookie Run - General Jellies_7: -733360949
+      Mobile - Cookie Run - General Jellies_8: -1807584941
+      Mobile - Cookie Run - General Jellies_9: 981022783
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

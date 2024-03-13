@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2061184226186783085}
-  - component: {fileID: 8987766766461562441}
+  - component: {fileID: -8097383644227628488}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8987766766461562441
+--- !u!114 &-8097383644227628488
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,22 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4fcfa33b2f5d5e47b5fc920f8e1da03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoubleJumpObstacle: {fileID: 7333195339915734012, guid: ff49db86526f96f4d9d48589f24f6bb4, type: 3}
-  GoldCoin: {fileID: 1247601482329586197, guid: 85ee0c5fd04a53440824062103736114, type: 3}
-  GoldCoinEffect: {fileID: 366378146248813899, guid: 7e3d328e543905343804dd22208cacc1, type: 3}
-  Growing: {fileID: 6192959415046022044, guid: 3e0ddc0372e22204196ae764294a1839, type: 3}
-  JumpObstacle: {fileID: 6815703698522649928, guid: 4a7304013c91a934f905201fd2ca9035, type: 3}
-  Magnet: {fileID: 9010286422537782595, guid: bff0b9abb7161b844b6cd5f4688d0c0b, type: 3}
-  MakeCoin: {fileID: 5244562033707177093, guid: d81638721dce14d4a98625aad966fbf7, type: 3}
-  MakeJelly: {fileID: 8047366679790655413, guid: c71985ee67623804f9c9d6b3d300bd89, type: 3}
-  PinkJelly: {fileID: 6833929784518810628, guid: b23dbe3c1b3254040a4b8b55c0528729, type: 3}
-  PinkJellyEffect: {fileID: 8601062955966507458, guid: eec1c8001c00f064ea87c810cc3d8574, type: 3}
-  Potion: {fileID: 178244144124822703, guid: 59e9cb86a86eb6040bc3ffe3bb874a87, type: 3}
-  ResumeUI: {fileID: 6023674642535503860, guid: bc293265d32774b4fafaee73d9ac9c74, type: 3}
-  RunningEffect: {fileID: 6622458066485889453, guid: 186f38e52fafb4f4fa30e65930037bc7, type: 3}
-  RunningFast: {fileID: 4272874344310314528, guid: 5a3381cf4484270448fa13d2a0489b44, type: 3}
-  SilverCoin: {fileID: -8641539418703620090, guid: b32c4e3099c686c47acb0e5c4f4f783a, type: 3}
-  SilverCoinEffect: {fileID: 5102303860462005183, guid: d9a0052216c1f01408e40e99058592b1, type: 3}
-  SildeObstacle: {fileID: 5645885959605965455, guid: bad9973ea599eae468f5be64da5a3024, type: 3}
-  YellowJelly: {fileID: 5875774863933023386, guid: 8e616bb1cb88a494fb43053ab5a3d6c1, type: 3}
-  YellowJellyEffect: {fileID: 4110105922094912695, guid: 9eaa06dcfcb426943879cef62c36115c, type: 3}
+  FirstPattern: {fileID: 55814100415662063, guid: b9e1b5c1a35767a4798e84a043607b06, type: 3}
+  data: {fileID: 4900000, guid: 9c8eeacf697f53f49b3480972c3fcce1, type: 3}
