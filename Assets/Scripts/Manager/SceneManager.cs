@@ -31,6 +31,7 @@ public class SceneManager : Singleton<SceneManager>
 
     public void LoadScene(string sceneName)
     {
+        Debug.Log($"Manager LoadScene : {sceneName}");
         StartCoroutine(LoadingRoutine(sceneName));
     }
 
@@ -66,7 +67,7 @@ public class SceneManager : Singleton<SceneManager>
         loadingBar.gameObject.SetActive(false);
         Time.timeScale = 1f;
 
-        
+        curScene = GetCurScene();
         yield return curScene.LoadingRoutine();
     }
 
@@ -116,6 +117,7 @@ public class SceneManager : Singleton<SceneManager>
         Manager.UI.ClearWindowUI();
         Manager.UI.CloseInGameUI();
         Manager.UI.ChangeInGameUI();
+        yield return new WaitForSeconds(1f);
 
 
         Time.timeScale = 0f;
@@ -131,7 +133,7 @@ public class SceneManager : Singleton<SceneManager>
         Manager.UI.EnsureEventSystem();
 
         BaseScene curScene = GetCurScene();
-        yield return curScene.LoadingRoutine();
+        //yield return curScene.LoadingRoutine();
 
         loadingBar.gameObject.SetActive(false);
         Time.timeScale = 1f;

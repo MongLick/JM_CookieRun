@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class LoadingScene : BaseScene
 {
+    private Coroutine loadingRoutine;
+
     private void Start()
     {
-        StartCoroutine(LoadingRoutine());
+        loadingRoutine = StartCoroutine(LoadingRoutine());
     }
 
     public override IEnumerator LoadingRoutine()
@@ -26,5 +28,11 @@ public class LoadingScene : BaseScene
         gameObject2.SetActive(true);
         GameObject gameObject3 = transform.GetChild(3).gameObject;
         gameObject3.SetActive(true);
+    }
+
+    private void OnDestroy()
+    {
+        if (loadingRoutine != null)
+            StopCoroutine(loadingRoutine);
     }
 }

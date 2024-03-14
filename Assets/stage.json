@@ -2,23 +2,13 @@
   "stage": [
     {
       "stageID": "0",
-      "JellyXpos": "15",
+      "JellyXpos": "28",
       "JellyYpos": "-2.1"
     },
     {
       "stageID": "1",
-      "JellyXpos": "2",
-      "JellyYpos": "2"
-    },
-    {
-      "stageID": "2",
-      "JellyXpos": "3",
-      "JellyYpos": "3"
-    },
-    {
-      "stageID": "3",
-      "JellyXpos": "4",
-      "JellyYpos": "4"
+      "JellyXpos": "75",
+      "JellyYpos": "-2.1"
     }
   ]
 }

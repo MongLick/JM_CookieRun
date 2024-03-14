@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Animator animator; // 애니메이터
     [SerializeField] BoxCollider2D boxCollider; // 박스콜라이더
     [SerializeField] CapsuleCollider2D capsuleCollider; // 캡슐콜라이더
+    [SerializeField] BoxCollider2D groundChecker;
 
     [Header("Specs")]
     [SerializeField] float jumpPower; // 얼마나 힘을 줄지
@@ -103,13 +104,32 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision) // 뭐가 닿았으면 호출
     {
-        if (collision.gameObject.tag.CompareTo("Ground") == 0) // 뭐가 닿았으면
+        //if (collision.gameObject.tag.CompareTo("Ground") == 0) // 뭐가 닿았으면
+        //{
+        //    isJumping = false; // 점프를 안 하고 있다로 변경됨
+        //    animator.SetBool("Jump", false); // 점프 애니메이션 꺼줌
+        //    jumpCount = 0; // 점프 카운터 초기화
+        //    animator.SetBool("DoubleJump", false); // // 더블점프 애니메이션 꺼줌
+        //}
+        // Die(); // Die 함수 호출
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground")) // 뭐가 닿았으면
         {
             isJumping = false; // 점프를 안 하고 있다로 변경됨
             animator.SetBool("Jump", false); // 점프 애니메이션 꺼줌
             jumpCount = 0; // 점프 카운터 초기화
             animator.SetBool("DoubleJump", false); // // 더블점프 애니메이션 꺼줌
         }
-        // Die(); // Die 함수 호출
+        //Die(); // Die 함수 호출
+    }
+
+    private void Update()
+    {
+        if (rigid.velocity.y <= 0)
+            groundChecker.enabled = true;
+        else if (rigid.velocity.y > 0.1f)
+            groundChecker.enabled = false;
     }
 }
