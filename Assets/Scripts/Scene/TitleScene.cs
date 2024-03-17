@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class TitleScene : BaseScene
 {
+    bool OnClick = true;
     public void GameSceneLoad()
     {
-        Manager.Scene.LoadScene2("GameScene");
+        if(OnClick == true)
+        {
+            Manager.Scene.LoadScene2("GameScene");
+            OnClick = false;
+        }
     }
 
     public override IEnumerator LoadingRoutine()

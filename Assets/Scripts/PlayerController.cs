@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public enum ButtonType { None, Slide, Jump}
+public enum ButtonType { None, Slide, Jump }
 
 public class PlayerController : MonoBehaviour
 {
@@ -96,23 +96,26 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void Die() // 죽었을 때 호출
+    public float hp = 100;
+    public float damage = 10;
+    public bool isGameover = false;
+    public float delta;
+    public float damageTime;
+
+    public void Die() // 죽었을 때 호출
     {
-        animator.SetBool("Die", true); // 애니메이터에서 true로 바꿔줌
-        OnDied?.Invoke(); // 이벤트로 여러가지 작업 하려고 만듬 
+        if (isGameover == true)
+        {
+            animator.SetBool("Die", true); // 애니메이터에서 true로 바꿔줌
+            Invoke("TimeCheck", 0.8f);
+        }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) // 뭐가 닿았으면 호출
+    public void TimeCheck()
     {
-        //if (collision.gameObject.tag.CompareTo("Ground") == 0) // 뭐가 닿았으면
-        //{
-        //    isJumping = false; // 점프를 안 하고 있다로 변경됨
-        //    animator.SetBool("Jump", false); // 점프 애니메이션 꺼줌
-        //    jumpCount = 0; // 점프 카운터 초기화
-        //    animator.SetBool("DoubleJump", false); // // 더블점프 애니메이션 꺼줌
-        //}
-        // Die(); // Die 함수 호출
+        Time.timeScale = 0;
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground")) // 뭐가 닿았으면
@@ -122,7 +125,6 @@ public class PlayerController : MonoBehaviour
             jumpCount = 0; // 점프 카운터 초기화
             animator.SetBool("DoubleJump", false); // // 더블점프 애니메이션 꺼줌
         }
-        //Die(); // Die 함수 호출
     }
 
     private void Update()
@@ -131,5 +133,59 @@ public class PlayerController : MonoBehaviour
             groundChecker.enabled = true;
         else if (rigid.velocity.y > 0.1f)
             groundChecker.enabled = false;
+
+        if (isGameover == false)
+        {
+            delta += Time.deltaTime;
+            hp -= delta * 0.5f;
+            Slider.value = hp;
+            delta = 0;
+        }
+
+        if (hp <= 0)
+        {
+            isGameover = true;
+            Die();
+        }
+    }
+
+    [SerializeField] Slider Slider;
+
+    private bool isHurt = true;
+
+    private IEnumerator CookieBlink()
+    {
+        Debug.Log("1");
+        transform.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.3f);
+        yield return new WaitForSeconds(0.2f);
+        transform.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+        yield return new WaitForSeconds(0.2f);
+        transform.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.3f);
+        yield return new WaitForSeconds(0.2f);
+        transform.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1);
+        yield return new WaitForSeconds(0.2f);
+        transform.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.3f);
+        yield return new WaitForSeconds(0.2f);
+        transform.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1);
+        isHurt = true;
+    }
+
+    public void TakeDamage()
+    {
+        if (isHurt)
+        {
+            hp -= damage;
+            Slider.value = hp;
+            isHurt = false;
+            StartCoroutine(CookieBlink());
+        }
+    }
+
+    public void GetItem(string name)
+    {
+        if(name == "potion")
+        {
+            hp += 30;
+        }
     }
 }

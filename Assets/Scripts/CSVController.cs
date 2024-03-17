@@ -28,18 +28,23 @@ public class CSVController : MonoBehaviour
         Manager.Pool.GetPool(FirstPattern, new Vector3(x, y, 0), Quaternion.identity);
         yield return new WaitForSeconds(13f);
 
+        PooledObject pooledObject;
+
         while (true)
         {
             x = datas.stage[1].JellyXpos;
             y = datas.stage[1].JellyYpos;
 
-            Manager.Pool.GetPool(SecondPattern, new Vector3(x, y, 0), Quaternion.identity);
+            pooledObject = Manager.Pool.GetPool(SecondPattern, new Vector3(x, y, 0), Quaternion.identity);
+            pooledObject.Init();
             yield return new WaitForSeconds(22f);
 
-            Manager.Pool.GetPool(ThirdPattern, new Vector3(x, y, 0), Quaternion.identity);
+            pooledObject = Manager.Pool.GetPool(ThirdPattern, new Vector3(x, y, 0), Quaternion.identity);
+            pooledObject.Init();
             yield return new WaitForSeconds(22f);
 
-            Manager.Pool.GetPool(FirstPattern, new Vector3(x, y, 0), Quaternion.identity);
+            pooledObject = Manager.Pool.GetPool(FirstPattern, new Vector3(x, y, 0), Quaternion.identity);
+            pooledObject.Init();
             yield return new WaitForSeconds(22f);
         }
     }

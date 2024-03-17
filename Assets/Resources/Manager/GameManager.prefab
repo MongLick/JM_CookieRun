@@ -44,5 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4fcfa33b2f5d5e47b5fc920f8e1da03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FirstPattern: {fileID: 55814100415662063, guid: b9e1b5c1a35767a4798e84a043607b06, type: 3}
-  data: {fileID: 4900000, guid: 9c8eeacf697f53f49b3480972c3fcce1, type: 3}
+  isGameOver: 0
+  hpBarUI: {fileID: 0}
+  hpMax: 100
+  hp: 100

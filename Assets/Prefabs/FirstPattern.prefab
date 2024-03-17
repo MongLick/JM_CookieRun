@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 6445466527143759262}
   - component: {fileID: 7860488197128503239}
   - component: {fileID: 1220279878862163563}
-  m_Layer: 0
+  - component: {fileID: 4031069687789576124}
+  m_Layer: 8
   m_Name: GoldCoin (7)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,8 +120,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &4031069687789576124
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47342570859768185}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4453125
 --- !u!1 &336804060014543151
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,9 +170,10 @@ GameObject:
   - component: {fileID: 5263181699475863849}
   - component: {fileID: 4431269684179041536}
   - component: {fileID: 6411738370974181652}
-  m_Layer: 0
+  - component: {fileID: 9128919071025973443}
+  m_Layer: 8
   m_Name: SilverCoin (17)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -240,8 +278,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &9128919071025973443
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336804060014543151}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &431644871018876797
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,9 +327,10 @@ GameObject:
   - component: {fileID: 6813957645127396042}
   - component: {fileID: 3558269444517476995}
   - component: {fileID: 5875774863933023386}
-  m_Layer: 0
+  - component: {fileID: 2834339350820242732}
+  m_Layer: 8
   m_Name: YellowJelly
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -339,8 +414,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &2834339350820242732
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431644871018876797}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &520783789133578701
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,9 +464,10 @@ GameObject:
   - component: {fileID: 5157147505605699523}
   - component: {fileID: 1978203479462061053}
   - component: {fileID: 3417451493207737687}
-  m_Layer: 0
+  - component: {fileID: 5467124913316094277}
+  m_Layer: 8
   m_Name: SilverCoin (21)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -460,8 +572,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &5467124913316094277
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520783789133578701}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &523173255203360974
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,9 +621,10 @@ GameObject:
   - component: {fileID: 7764452441622349889}
   - component: {fileID: 646940004996702896}
   - component: {fileID: 2954220932521203607}
-  m_Layer: 0
+  - component: {fileID: 8908869523960198429}
+  m_Layer: 9
   m_Name: JumpObstacle (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -559,8 +708,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!61 &8908869523960198429
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523173255203360974}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.21262655}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.265625, y: 2.046875}
+    newSize: {x: 1.265625, y: 2.046875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.265625, y: 1.6216218}
+  m_EdgeRadius: 0
 --- !u!1 &532410901476242716
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,9 +767,10 @@ GameObject:
   - component: {fileID: 4646458651795382040}
   - component: {fileID: 14082706698222762}
   - component: {fileID: 3896361149151746839}
-  m_Layer: 0
+  - component: {fileID: 4578448738864803622}
+  m_Layer: 9
   m_Name: SlideObstacle (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -658,8 +854,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!61 &4578448738864803622
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532410901476242716}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.34375, y: 7.53125}
+    newSize: {x: 1.34375, y: 7.53125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.34375, y: 7.53125}
+  m_EdgeRadius: 0
 --- !u!1 &591959833114101409
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,9 +914,10 @@ GameObject:
   - component: {fileID: 4050416903819101407}
   - component: {fileID: 2543001028053669655}
   - component: {fileID: 4282969957492234038}
-  m_Layer: 0
+  - component: {fileID: 2682266273174681801}
+  m_Layer: 8
   m_Name: SilverCoin (16)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -779,8 +1022,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &2682266273174681801
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591959833114101409}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &706706732084310305
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,9 +1071,10 @@ GameObject:
   - component: {fileID: 7084225991805657756}
   - component: {fileID: 741106967960158861}
   - component: {fileID: 4519004904578945228}
-  m_Layer: 0
+  - component: {fileID: 8902091072457492960}
+  m_Layer: 8
   m_Name: YellowJelly (6)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -878,8 +1158,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &8902091072457492960
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706706732084310305}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &788379970172769440
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,9 +1207,10 @@ GameObject:
   - component: {fileID: 4976351435965765381}
   - component: {fileID: 8059398234852260337}
   - component: {fileID: 4763548777020368806}
-  m_Layer: 0
+  - component: {fileID: 3417781024366060033}
+  m_Layer: 8
   m_Name: PinkJelly (2)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -977,8 +1294,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &3417781024366060033
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788379970172769440}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &913179561636378807
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,9 +1343,10 @@ GameObject:
   - component: {fileID: 346173675077230015}
   - component: {fileID: 8884748290754893473}
   - component: {fileID: 6326263608106558552}
-  m_Layer: 0
+  - component: {fileID: 4806088759407236743}
+  m_Layer: 8
   m_Name: YellowJelly (16)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1076,8 +1430,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &4806088759407236743
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913179561636378807}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &1013052316250299694
 GameObject:
   m_ObjectHideFlags: 0
@@ -1089,9 +1479,10 @@ GameObject:
   - component: {fileID: 4983337041907819780}
   - component: {fileID: 8404317555020072158}
   - component: {fileID: 5284841029373674689}
-  m_Layer: 0
+  - component: {fileID: 2749104930392875365}
+  m_Layer: 8
   m_Name: YellowJelly (5)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1175,8 +1566,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &2749104930392875365
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013052316250299694}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &1053170907125656928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,9 +1616,10 @@ GameObject:
   - component: {fileID: 7538336789490619904}
   - component: {fileID: 7667869001793338430}
   - component: {fileID: 2372678602170157141}
-  m_Layer: 0
+  - component: {fileID: 4243326204676796384}
+  m_Layer: 8
   m_Name: SilverCoin (20)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1296,8 +1724,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &4243326204676796384
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053170907125656928}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &1429753674410042883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,9 +1773,10 @@ GameObject:
   - component: {fileID: 789027162483068101}
   - component: {fileID: 3892080115082395587}
   - component: {fileID: 5456260339647069256}
-  m_Layer: 0
+  - component: {fileID: 6478273079458786013}
+  m_Layer: 8
   m_Name: PinkJelly (4)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1395,8 +1860,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &6478273079458786013
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429753674410042883}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &1907428107782849943
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,9 +1909,10 @@ GameObject:
   - component: {fileID: 8506481382070166253}
   - component: {fileID: 3800073731302292305}
   - component: {fileID: 6106526309463502435}
-  m_Layer: 0
+  - component: {fileID: 7512578041777412905}
+  m_Layer: 9
   m_Name: JumpObstacle (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1494,8 +1996,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!61 &7512578041777412905
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907428107782849943}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.22918802}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.265625, y: 2.046875}
+    newSize: {x: 1.265625, y: 2.046875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.265625, y: 1.588499}
+  m_EdgeRadius: 0
 --- !u!1 &2008517788515096151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1507,9 +2055,10 @@ GameObject:
   - component: {fileID: 5170117532147296531}
   - component: {fileID: 2347242332859179612}
   - component: {fileID: 1389217909580283166}
-  m_Layer: 0
+  - component: {fileID: 9085381295586488841}
+  m_Layer: 8
   m_Name: PinkJelly (8)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1593,8 +2142,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &9085381295586488841
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008517788515096151}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &2129853077743051969
 GameObject:
   m_ObjectHideFlags: 0
@@ -1607,9 +2192,10 @@ GameObject:
   - component: {fileID: 3481291936843969013}
   - component: {fileID: 7599611981252400406}
   - component: {fileID: 3278227691348921716}
-  m_Layer: 0
+  - component: {fileID: 3338633150912468941}
+  m_Layer: 8
   m_Name: GoldCoin (10)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1714,8 +2300,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &3338633150912468941
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129853077743051969}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4453125
 --- !u!1 &2233140464755214928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,9 +2350,10 @@ GameObject:
   - component: {fileID: 4869164941116323359}
   - component: {fileID: 5209258954137601135}
   - component: {fileID: 1611273625897737929}
-  m_Layer: 0
+  - component: {fileID: 8636188453408001975}
+  m_Layer: 8
   m_Name: SilverCoin (12)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1835,8 +2458,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &8636188453408001975
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2233140464755214928}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &2255572673687982633
 GameObject:
   m_ObjectHideFlags: 0
@@ -1848,9 +2507,10 @@ GameObject:
   - component: {fileID: 8761427291940255737}
   - component: {fileID: 4720010332104117024}
   - component: {fileID: 7086759789686301942}
-  m_Layer: 0
+  - component: {fileID: 224846883549864062}
+  m_Layer: 9
   m_Name: JumpObstacle (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1934,8 +2594,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!61 &224846883549864062
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2255572673687982633}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.21716177}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.265625, y: 2.046875}
+    newSize: {x: 1.265625, y: 2.046875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.265625, y: 1.6125515}
+  m_EdgeRadius: 0
 --- !u!1 &2256346729359623026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,9 +2653,10 @@ GameObject:
   - component: {fileID: 5617021558272461627}
   - component: {fileID: 5368279489144138798}
   - component: {fileID: 1516154738240517242}
-  m_Layer: 0
+  - component: {fileID: 3937475751543860933}
+  m_Layer: 9
   m_Name: JumpObstacle (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2033,8 +2740,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!61 &3937475751543860933
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2256346729359623026}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.2173278}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.265625, y: 2.046875}
+    newSize: {x: 1.265625, y: 2.046875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.265625, y: 1.6122193}
+  m_EdgeRadius: 0
 --- !u!1 &2265189276409060706
 GameObject:
   m_ObjectHideFlags: 0
@@ -2047,9 +2800,10 @@ GameObject:
   - component: {fileID: 559135701017573026}
   - component: {fileID: 6883711486516139292}
   - component: {fileID: 3914646710349688639}
-  m_Layer: 0
+  - component: {fileID: 1642352962643323992}
+  m_Layer: 8
   m_Name: GoldCoin (1)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2154,8 +2908,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &1642352962643323992
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2265189276409060706}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4453125
 --- !u!1 &2303695036154713269
 GameObject:
   m_ObjectHideFlags: 0
@@ -2168,9 +2958,10 @@ GameObject:
   - component: {fileID: 4013385574645146133}
   - component: {fileID: 8176443778397314530}
   - component: {fileID: 2090452094687557797}
-  m_Layer: 0
+  - component: {fileID: 6848979157603135923}
+  m_Layer: 8
   m_Name: SilverCoin (19)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2275,8 +3066,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &6848979157603135923
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2303695036154713269}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &2323227269322442769
 GameObject:
   m_ObjectHideFlags: 0
@@ -2288,9 +3115,10 @@ GameObject:
   - component: {fileID: 4507635120193048525}
   - component: {fileID: 3083359695050500486}
   - component: {fileID: 2760036716500561190}
-  m_Layer: 0
+  - component: {fileID: 4275589982850680300}
+  m_Layer: 9
   m_Name: SlideObstacle (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2374,8 +3202,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!61 &4275589982850680300
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2323227269322442769}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.34375, y: 7.53125}
+    newSize: {x: 1.34375, y: 7.53125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.34375, y: 7.53125}
+  m_EdgeRadius: 0
 --- !u!1 &2324347321816706515
 GameObject:
   m_ObjectHideFlags: 0
@@ -2387,9 +3261,10 @@ GameObject:
   - component: {fileID: 5606417339306851823}
   - component: {fileID: 2231853736488646751}
   - component: {fileID: 2346821626638193389}
-  m_Layer: 0
+  - component: {fileID: 8860779680742198273}
+  m_Layer: 8
   m_Name: PinkJelly (10)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2473,8 +3348,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &8860779680742198273
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2324347321816706515}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &2372535283495404597
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,9 +3398,10 @@ GameObject:
   - component: {fileID: 3187766553922921428}
   - component: {fileID: 1577066392943880613}
   - component: {fileID: 2278523802930400695}
-  m_Layer: 0
+  - component: {fileID: 4631823733432305668}
+  m_Layer: 8
   m_Name: SilverCoin (11)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2594,8 +3506,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &4631823733432305668
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2372535283495404597}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &2416238648392020085
 GameObject:
   m_ObjectHideFlags: 0
@@ -2607,9 +3555,10 @@ GameObject:
   - component: {fileID: 5836608867867827492}
   - component: {fileID: 1648869499537835747}
   - component: {fileID: 5645885959605965455}
-  m_Layer: 0
+  - component: {fileID: 7100370912405418794}
+  m_Layer: 9
   m_Name: SlideObstacle
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2693,8 +3642,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!61 &7100370912405418794
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2416238648392020085}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.34375, y: 7.53125}
+    newSize: {x: 1.34375, y: 7.53125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.34375, y: 7.53125}
+  m_EdgeRadius: 0
 --- !u!1 &2433837418122185741
 GameObject:
   m_ObjectHideFlags: 0
@@ -2707,9 +3702,10 @@ GameObject:
   - component: {fileID: 9192660934198613489}
   - component: {fileID: 5949417471282048851}
   - component: {fileID: 6637720935407517994}
-  m_Layer: 0
+  - component: {fileID: 4939184003396532678}
+  m_Layer: 8
   m_Name: SilverCoin (18)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2814,8 +3810,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &4939184003396532678
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2433837418122185741}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &2485849333150115994
 GameObject:
   m_ObjectHideFlags: 0
@@ -2828,9 +3860,10 @@ GameObject:
   - component: {fileID: 7935675629998228118}
   - component: {fileID: 3403021686624532697}
   - component: {fileID: 5585965203087031957}
-  m_Layer: 0
+  - component: {fileID: 4297994763564199332}
+  m_Layer: 8
   m_Name: SilverCoin (9)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2935,8 +3968,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &4297994763564199332
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2485849333150115994}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &2498055395556428157
 GameObject:
   m_ObjectHideFlags: 0
@@ -2949,9 +4018,10 @@ GameObject:
   - component: {fileID: 6013092649499068565}
   - component: {fileID: 3003763677492287640}
   - component: {fileID: 3444914826948599172}
-  m_Layer: 0
+  - component: {fileID: 8639586026983080472}
+  m_Layer: 8
   m_Name: SilverCoin (8)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3056,8 +4126,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &8639586026983080472
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2498055395556428157}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &2528090197443439514
 GameObject:
   m_ObjectHideFlags: 0
@@ -3069,9 +4175,10 @@ GameObject:
   - component: {fileID: 5292263520371937937}
   - component: {fileID: 6537032096611703672}
   - component: {fileID: 7333195339915734012}
-  m_Layer: 0
+  - component: {fileID: 2016302176453857320}
+  m_Layer: 9
   m_Name: DoubleJumpObstacle
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3155,8 +4262,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!61 &2016302176453857320
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2528090197443439514}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.921875, y: 3.015625}
+    newSize: {x: 0.921875, y: 3.015625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.921875, y: 3.015625}
+  m_EdgeRadius: 0
 --- !u!1 &2610500211390789912
 GameObject:
   m_ObjectHideFlags: 0
@@ -3169,9 +4322,10 @@ GameObject:
   - component: {fileID: 8631537976058432150}
   - component: {fileID: 556780439836180781}
   - component: {fileID: 1312676125349835345}
-  m_Layer: 0
+  - component: {fileID: 5201805063094072664}
+  m_Layer: 8
   m_Name: SilverCoin (5)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3276,8 +4430,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &5201805063094072664
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2610500211390789912}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &2682736957457262122
 GameObject:
   m_ObjectHideFlags: 0
@@ -3289,9 +4479,10 @@ GameObject:
   - component: {fileID: 2507561537356638564}
   - component: {fileID: 5522366581477957805}
   - component: {fileID: 8025207386625056543}
-  m_Layer: 0
+  - component: {fileID: 5766492977865548876}
+  m_Layer: 9
   m_Name: JumpObstacle (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3375,8 +4566,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!61 &5766492977865548876
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2682736957457262122}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.22801983}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.265625, y: 2.046875}
+    newSize: {x: 1.265625, y: 2.046875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.265625, y: 1.5908353}
+  m_EdgeRadius: 0
 --- !u!1 &2718531191827353638
 GameObject:
   m_ObjectHideFlags: 0
@@ -3388,9 +4625,10 @@ GameObject:
   - component: {fileID: 2400769956477542753}
   - component: {fileID: 5712042274655373441}
   - component: {fileID: 5394439460552940296}
-  m_Layer: 0
+  - component: {fileID: 7100233843021174244}
+  m_Layer: 9
   m_Name: JumpObstacle (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3474,8 +4712,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!61 &7100233843021174244
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2718531191827353638}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.2280199}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.265625, y: 2.046875}
+    newSize: {x: 1.265625, y: 2.046875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.265625, y: 1.5908352}
+  m_EdgeRadius: 0
 --- !u!1 &2805064479577512408
 GameObject:
   m_ObjectHideFlags: 0
@@ -3522,6 +4806,72 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr:
+  - {fileID: 7256111930911148135}
+  - {fileID: 3117059238903602343}
+  - {fileID: 788379970172769440}
+  - {fileID: 9126247238764205910}
+  - {fileID: 1429753674410042883}
+  - {fileID: 9153626313665407079}
+  - {fileID: 5820012856878566375}
+  - {fileID: 2008517788515096151}
+  - {fileID: 2894727975119659738}
+  - {fileID: 2324347321816706515}
+  - {fileID: 431644871018876797}
+  - {fileID: 8379874331753121044}
+  - {fileID: 6365891735845737442}
+  - {fileID: 8367751832008186891}
+  - {fileID: 4206879797955357215}
+  - {fileID: 6787642169001078168}
+  - {fileID: 1013052316250299694}
+  - {fileID: 706706732084310305}
+  - {fileID: 6210144431360339031}
+  - {fileID: 5962665043885874167}
+  - {fileID: 5708139580000484707}
+  - {fileID: 3207609956247140968}
+  - {fileID: 5656827766258541998}
+  - {fileID: 7744601121662488428}
+  - {fileID: 7539241753437762050}
+  - {fileID: 5535114530141017382}
+  - {fileID: 7075891382769474582}
+  - {fileID: 913179561636378807}
+  - {fileID: 3939085834994320688}
+  - {fileID: 2265189276409060706}
+  - {fileID: 5820838462426255450}
+  - {fileID: 3463782929610247591}
+  - {fileID: 4689682537937627070}
+  - {fileID: 5813038273623448585}
+  - {fileID: 5151314444385688708}
+  - {fileID: 47342570859768185}
+  - {fileID: 9217653001550837292}
+  - {fileID: 7591742136924126318}
+  - {fileID: 2129853077743051969}
+  - {fileID: 7554704162123911097}
+  - {fileID: 6634445443286707171}
+  - {fileID: 4315177700397275022}
+  - {fileID: 6041771443771601181}
+  - {fileID: 4207180959611223100}
+  - {fileID: 2498055395556428157}
+  - {fileID: 2908295831778257133}
+  - {fileID: 3755341312081858788}
+  - {fileID: 8919495809579407624}
+  - {fileID: 2610500211390789912}
+  - {fileID: 8887607480724517508}
+  - {fileID: 3095675706412017110}
+  - {fileID: 2485849333150115994}
+  - {fileID: 5321317335341241982}
+  - {fileID: 2372535283495404597}
+  - {fileID: 2233140464755214928}
+  - {fileID: 8919109170891407330}
+  - {fileID: 3267656099222574576}
+  - {fileID: 5802917904825486596}
+  - {fileID: 591959833114101409}
+  - {fileID: 336804060014543151}
+  - {fileID: 2433837418122185741}
+  - {fileID: 2303695036154713269}
+  - {fileID: 1053170907125656928}
+  - {fileID: 520783789133578701}
+  - {fileID: 7492454334657617740}
   autoRelease: 1
   releaseTime: 33
 --- !u!114 &1814316140209044366
@@ -3550,9 +4900,10 @@ GameObject:
   - component: {fileID: 1043108451795885312}
   - component: {fileID: 8285290272226168173}
   - component: {fileID: 3557839226106988699}
-  m_Layer: 0
+  - component: {fileID: 8554266998142608316}
+  m_Layer: 8
   m_Name: PinkJelly (9)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3636,8 +4987,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &8554266998142608316
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2894727975119659738}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &2908295831778257133
 GameObject:
   m_ObjectHideFlags: 0
@@ -3650,9 +5037,10 @@ GameObject:
   - component: {fileID: 7373172352988772887}
   - component: {fileID: 8584639329262776784}
   - component: {fileID: 7027055316504261489}
-  m_Layer: 0
+  - component: {fileID: 751280804184459015}
+  m_Layer: 8
   m_Name: SilverCoin (2)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3757,8 +5145,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &751280804184459015
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2908295831778257133}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &2923310200567375194
 GameObject:
   m_ObjectHideFlags: 0
@@ -3770,9 +5194,10 @@ GameObject:
   - component: {fileID: 7227596219313449455}
   - component: {fileID: 2270999755788713591}
   - component: {fileID: 163601233084238548}
-  m_Layer: 0
+  - component: {fileID: 8860659774272548321}
+  m_Layer: 9
   m_Name: JumpObstacle
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3856,8 +5281,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!61 &8860659774272548321
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2923310200567375194}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.2319606}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.265625, y: 2.046875}
+    newSize: {x: 1.265625, y: 2.046875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.265625, y: 1.5829538}
+  m_EdgeRadius: 0
 --- !u!1 &3095675706412017110
 GameObject:
   m_ObjectHideFlags: 0
@@ -3870,9 +5341,10 @@ GameObject:
   - component: {fileID: 199696450905711430}
   - component: {fileID: 8745136097962286564}
   - component: {fileID: 3361409666504067273}
-  m_Layer: 0
+  - component: {fileID: 2337462795864457572}
+  m_Layer: 8
   m_Name: SilverCoin (7)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3977,8 +5449,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &2337462795864457572
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3095675706412017110}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &3117059238903602343
 GameObject:
   m_ObjectHideFlags: 0
@@ -3990,9 +5498,10 @@ GameObject:
   - component: {fileID: 1977406890500315277}
   - component: {fileID: 3418753426871712909}
   - component: {fileID: 5583847681160219891}
-  m_Layer: 0
+  - component: {fileID: 6614996311270963676}
+  m_Layer: 8
   m_Name: PinkJelly (1)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4076,8 +5585,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &6614996311270963676
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3117059238903602343}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &3207609956247140968
 GameObject:
   m_ObjectHideFlags: 0
@@ -4089,9 +5634,10 @@ GameObject:
   - component: {fileID: 1036653381439653215}
   - component: {fileID: 4223230520467562057}
   - component: {fileID: 8647888012385012726}
-  m_Layer: 0
+  - component: {fileID: 3958561708990571467}
+  m_Layer: 8
   m_Name: YellowJelly (10)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4175,8 +5721,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &3958561708990571467
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3207609956247140968}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &3267656099222574576
 GameObject:
   m_ObjectHideFlags: 0
@@ -4189,9 +5771,10 @@ GameObject:
   - component: {fileID: 4819783014180774372}
   - component: {fileID: 8799987586304740734}
   - component: {fileID: 417051863563882729}
-  m_Layer: 0
+  - component: {fileID: 1567137902114126313}
+  m_Layer: 8
   m_Name: SilverCoin (14)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4296,8 +5879,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &1567137902114126313
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3267656099222574576}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &3463782929610247591
 GameObject:
   m_ObjectHideFlags: 0
@@ -4310,9 +5929,10 @@ GameObject:
   - component: {fileID: 2988301948254204535}
   - component: {fileID: 6110431411092361741}
   - component: {fileID: 2287694826517184728}
-  m_Layer: 0
+  - component: {fileID: 3259175453394934685}
+  m_Layer: 8
   m_Name: GoldCoin (3)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4417,8 +6037,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &3259175453394934685
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3463782929610247591}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4453125
 --- !u!1 &3755341312081858788
 GameObject:
   m_ObjectHideFlags: 0
@@ -4431,9 +6087,10 @@ GameObject:
   - component: {fileID: 2027612251626004425}
   - component: {fileID: 5996871494339116713}
   - component: {fileID: 8009927407374826290}
-  m_Layer: 0
+  - component: {fileID: 7749684021948790373}
+  m_Layer: 8
   m_Name: SilverCoin (3)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4538,8 +6195,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &7749684021948790373
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3755341312081858788}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &3939085834994320688
 GameObject:
   m_ObjectHideFlags: 0
@@ -4552,9 +6245,10 @@ GameObject:
   - component: {fileID: 1077612767176774257}
   - component: {fileID: 8639027454021387425}
   - component: {fileID: 1247601482329586197}
-  m_Layer: 0
+  - component: {fileID: 5133164509733333660}
+  m_Layer: 8
   m_Name: GoldCoin
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4659,8 +6353,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &5133164509733333660
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3939085834994320688}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4453125
 --- !u!1 &4163480870759934967
 GameObject:
   m_ObjectHideFlags: 0
@@ -4880,9 +6610,10 @@ GameObject:
   - component: {fileID: 3694378988840020927}
   - component: {fileID: 7718018011636220563}
   - component: {fileID: 8857139286112127409}
-  m_Layer: 0
+  - component: {fileID: 8394466445139388591}
+  m_Layer: 8
   m_Name: YellowJelly (3)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4966,8 +6697,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &8394466445139388591
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4206879797955357215}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &4207180959611223100
 GameObject:
   m_ObjectHideFlags: 0
@@ -4980,9 +6747,10 @@ GameObject:
   - component: {fileID: 4466053810220310488}
   - component: {fileID: 1196089809000691498}
   - component: {fileID: 8179320703162716640}
-  m_Layer: 0
+  - component: {fileID: 7759177803025902472}
+  m_Layer: 8
   m_Name: SilverCoin (1)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5087,8 +6855,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &7759177803025902472
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4207180959611223100}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &4315177700397275022
 GameObject:
   m_ObjectHideFlags: 0
@@ -5101,9 +6905,10 @@ GameObject:
   - component: {fileID: 8608486249840157797}
   - component: {fileID: 4211657321021707510}
   - component: {fileID: 3166864920017224266}
-  m_Layer: 0
+  - component: {fileID: 765721260311781177}
+  m_Layer: 8
   m_Name: GoldCoin (11)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5208,8 +7013,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &765721260311781177
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4315177700397275022}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4453125
 --- !u!1 &4689682537937627070
 GameObject:
   m_ObjectHideFlags: 0
@@ -5222,9 +7063,10 @@ GameObject:
   - component: {fileID: 6831222976080732010}
   - component: {fileID: 5276316632479009789}
   - component: {fileID: 2059810217803500173}
-  m_Layer: 0
+  - component: {fileID: 176691758011743504}
+  m_Layer: 8
   m_Name: GoldCoin (4)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5329,8 +7171,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &176691758011743504
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4689682537937627070}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4453125
 --- !u!1 &5151314444385688708
 GameObject:
   m_ObjectHideFlags: 0
@@ -5343,9 +7221,10 @@ GameObject:
   - component: {fileID: 5631284822817891401}
   - component: {fileID: 4555530786596493306}
   - component: {fileID: 5050774883107371481}
-  m_Layer: 0
+  - component: {fileID: 8802134832131636055}
+  m_Layer: 8
   m_Name: GoldCoin (6)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5450,8 +7329,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &8802134832131636055
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5151314444385688708}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4453125
 --- !u!1 &5321317335341241982
 GameObject:
   m_ObjectHideFlags: 0
@@ -5464,9 +7379,10 @@ GameObject:
   - component: {fileID: 485461566046164343}
   - component: {fileID: 146006351744328247}
   - component: {fileID: 4166274605735840782}
-  m_Layer: 0
+  - component: {fileID: 1934582850744372356}
+  m_Layer: 8
   m_Name: SilverCoin (10)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5571,8 +7487,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &1934582850744372356
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5321317335341241982}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &5535114530141017382
 GameObject:
   m_ObjectHideFlags: 0
@@ -5584,9 +7536,10 @@ GameObject:
   - component: {fileID: 5165029104209839145}
   - component: {fileID: 1948080879747059423}
   - component: {fileID: 3962493305281796688}
-  m_Layer: 0
+  - component: {fileID: 5327482308330872492}
+  m_Layer: 8
   m_Name: YellowJelly (14)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5670,8 +7623,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &5327482308330872492
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5535114530141017382}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &5649062673427542273
 GameObject:
   m_ObjectHideFlags: 0
@@ -5683,9 +7672,10 @@ GameObject:
   - component: {fileID: 99137467501464599}
   - component: {fileID: 4384314016714129917}
   - component: {fileID: 9136663488938390322}
-  m_Layer: 0
+  - component: {fileID: 1946376003431150400}
+  m_Layer: 9
   m_Name: SlideObstacle (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5769,8 +7759,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!61 &1946376003431150400
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5649062673427542273}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.34375, y: 7.53125}
+    newSize: {x: 1.34375, y: 7.53125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.34375, y: 7.53125}
+  m_EdgeRadius: 0
 --- !u!1 &5656827766258541998
 GameObject:
   m_ObjectHideFlags: 0
@@ -5782,9 +7818,10 @@ GameObject:
   - component: {fileID: 4092126432105661787}
   - component: {fileID: 6869448003800409473}
   - component: {fileID: 3212054035832882484}
-  m_Layer: 0
+  - component: {fileID: 5160191103749054962}
+  m_Layer: 8
   m_Name: YellowJelly (11)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5868,8 +7905,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &5160191103749054962
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5656827766258541998}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &5708139580000484707
 GameObject:
   m_ObjectHideFlags: 0
@@ -5881,9 +7954,10 @@ GameObject:
   - component: {fileID: 6263870122721374161}
   - component: {fileID: 1957801781061327355}
   - component: {fileID: 8032935122149695031}
-  m_Layer: 0
+  - component: {fileID: 2170602219660352370}
+  m_Layer: 8
   m_Name: YellowJelly (9)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5967,8 +8041,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &2170602219660352370
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5708139580000484707}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &5802917904825486596
 GameObject:
   m_ObjectHideFlags: 0
@@ -5981,9 +8091,10 @@ GameObject:
   - component: {fileID: 5448318566154206212}
   - component: {fileID: 1695702996684043885}
   - component: {fileID: 25131736416201853}
-  m_Layer: 0
+  - component: {fileID: 8938203784687075205}
+  m_Layer: 8
   m_Name: SilverCoin (15)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6088,8 +8199,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &8938203784687075205
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5802917904825486596}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &5813038273623448585
 GameObject:
   m_ObjectHideFlags: 0
@@ -6102,9 +8249,10 @@ GameObject:
   - component: {fileID: 2902985095943396228}
   - component: {fileID: 3753544078927799964}
   - component: {fileID: 190636475464271030}
-  m_Layer: 0
+  - component: {fileID: 4976931293106990184}
+  m_Layer: 8
   m_Name: GoldCoin (5)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6209,8 +8357,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &4976931293106990184
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5813038273623448585}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4453125
 --- !u!1 &5820012856878566375
 GameObject:
   m_ObjectHideFlags: 0
@@ -6222,9 +8406,10 @@ GameObject:
   - component: {fileID: 7732104695645266070}
   - component: {fileID: 6923332805306190423}
   - component: {fileID: 5656117234863164833}
-  m_Layer: 0
+  - component: {fileID: 3833969800951603265}
+  m_Layer: 8
   m_Name: PinkJelly (7)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6308,8 +8493,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &3833969800951603265
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5820012856878566375}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &5820838462426255450
 GameObject:
   m_ObjectHideFlags: 0
@@ -6322,9 +8543,10 @@ GameObject:
   - component: {fileID: 277822230525751}
   - component: {fileID: 9125292941909127138}
   - component: {fileID: 3944336202525320399}
-  m_Layer: 0
+  - component: {fileID: 4934778304512786529}
+  m_Layer: 8
   m_Name: GoldCoin (2)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6429,8 +8651,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &4934778304512786529
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5820838462426255450}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4453125
 --- !u!1 &5962665043885874167
 GameObject:
   m_ObjectHideFlags: 0
@@ -6442,9 +8700,10 @@ GameObject:
   - component: {fileID: 3760425992508759553}
   - component: {fileID: 1158340128646728355}
   - component: {fileID: 8127758808181080284}
-  m_Layer: 0
+  - component: {fileID: 3206063161060768595}
+  m_Layer: 8
   m_Name: YellowJelly (8)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6528,8 +8787,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &3206063161060768595
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5962665043885874167}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &6041771443771601181
 GameObject:
   m_ObjectHideFlags: 0
@@ -6542,9 +8837,10 @@ GameObject:
   - component: {fileID: 8766177448618505153}
   - component: {fileID: 4766798694273639659}
   - component: {fileID: -8641539418703620090}
-  m_Layer: 0
+  - component: {fileID: 5302017814686752293}
+  m_Layer: 8
   m_Name: SilverCoin
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6649,8 +8945,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &5302017814686752293
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6041771443771601181}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &6210144431360339031
 GameObject:
   m_ObjectHideFlags: 0
@@ -6662,9 +8994,10 @@ GameObject:
   - component: {fileID: 2918224445009543960}
   - component: {fileID: 8917805027549694871}
   - component: {fileID: 6849004786064702058}
-  m_Layer: 0
+  - component: {fileID: 6085802385282613860}
+  m_Layer: 8
   m_Name: YellowJelly (7)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6748,8 +9081,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &6085802385282613860
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6210144431360339031}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &6365891735845737442
 GameObject:
   m_ObjectHideFlags: 0
@@ -6761,9 +9130,10 @@ GameObject:
   - component: {fileID: 4129219659696090000}
   - component: {fileID: 4537712978630350039}
   - component: {fileID: 5841702639168988672}
-  m_Layer: 0
+  - component: {fileID: 18774275010732571}
+  m_Layer: 8
   m_Name: YellowJelly (1)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6847,8 +9217,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &18774275010732571
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6365891735845737442}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &6634445443286707171
 GameObject:
   m_ObjectHideFlags: 0
@@ -6861,9 +9267,10 @@ GameObject:
   - component: {fileID: 7698289602565726225}
   - component: {fileID: 4036123648398603114}
   - component: {fileID: 2938456314284380306}
-  m_Layer: 0
+  - component: {fileID: 393539874056603762}
+  m_Layer: 8
   m_Name: GoldCoin (14)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6968,8 +9375,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &393539874056603762
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6634445443286707171}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4453125
 --- !u!1 &6787642169001078168
 GameObject:
   m_ObjectHideFlags: 0
@@ -6981,9 +9424,10 @@ GameObject:
   - component: {fileID: 3785397539709627232}
   - component: {fileID: 7105515568526054565}
   - component: {fileID: 2812297595036019432}
-  m_Layer: 0
+  - component: {fileID: 5668902670874877645}
+  m_Layer: 8
   m_Name: YellowJelly (4)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7067,8 +9511,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &5668902670874877645
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6787642169001078168}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &6797484905028128101
 GameObject:
   m_ObjectHideFlags: 0
@@ -7230,9 +9710,10 @@ GameObject:
   - component: {fileID: 5281099559130567346}
   - component: {fileID: 8888568481379201761}
   - component: {fileID: 3955631132499135330}
-  m_Layer: 0
+  - component: {fileID: 531364785196567200}
+  m_Layer: 8
   m_Name: YellowJelly (15)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7316,8 +9797,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &531364785196567200
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7075891382769474582}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &7256111930911148135
 GameObject:
   m_ObjectHideFlags: 0
@@ -7329,9 +9846,10 @@ GameObject:
   - component: {fileID: 2471237249143159050}
   - component: {fileID: 7939129071803925512}
   - component: {fileID: 6171488983059903793}
-  m_Layer: 0
+  - component: {fileID: 358053921607755321}
+  m_Layer: 8
   m_Name: PinkJelly
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7415,8 +9933,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &358053921607755321
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7256111930911148135}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &7492454334657617740
 GameObject:
   m_ObjectHideFlags: 0
@@ -7429,9 +9983,10 @@ GameObject:
   - component: {fileID: 419370275267291330}
   - component: {fileID: 1830919035585955773}
   - component: {fileID: 178244144124822703}
-  m_Layer: 0
+  - component: {fileID: 2702571221830399368}
+  m_Layer: 8
   m_Name: Potion
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7536,8 +10091,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &2702571221830399368
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7492454334657617740}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.671875}
+  serializedVersion: 2
+  m_Radius: 0.671875
 --- !u!1 &7539241753437762050
 GameObject:
   m_ObjectHideFlags: 0
@@ -7549,9 +10140,10 @@ GameObject:
   - component: {fileID: 7307488962159150664}
   - component: {fileID: 7203683667130789183}
   - component: {fileID: 5407012705285437831}
-  m_Layer: 0
+  - component: {fileID: 1859768628035474188}
+  m_Layer: 8
   m_Name: YellowJelly (13)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7635,8 +10227,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &1859768628035474188
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7539241753437762050}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &7554704162123911097
 GameObject:
   m_ObjectHideFlags: 0
@@ -7649,9 +10277,10 @@ GameObject:
   - component: {fileID: 4168161772831304649}
   - component: {fileID: 6596954630267573797}
   - component: {fileID: 4871830531560842519}
-  m_Layer: 0
+  - component: {fileID: 5912669628068556433}
+  m_Layer: 8
   m_Name: GoldCoin (13)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7756,8 +10385,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &5912669628068556433
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7554704162123911097}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4453125
 --- !u!1 &7591742136924126318
 GameObject:
   m_ObjectHideFlags: 0
@@ -7770,9 +10435,10 @@ GameObject:
   - component: {fileID: 1115250906674441735}
   - component: {fileID: 1008145516257636691}
   - component: {fileID: 3171142912151357756}
-  m_Layer: 0
+  - component: {fileID: 7492730676809024166}
+  m_Layer: 8
   m_Name: GoldCoin (9)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7877,8 +10543,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &7492730676809024166
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7591742136924126318}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4453125
 --- !u!1 &7744601121662488428
 GameObject:
   m_ObjectHideFlags: 0
@@ -7890,9 +10592,10 @@ GameObject:
   - component: {fileID: 5727118811812702345}
   - component: {fileID: 361195714682365429}
   - component: {fileID: 2732454809087220991}
-  m_Layer: 0
+  - component: {fileID: 6603554154650714048}
+  m_Layer: 8
   m_Name: YellowJelly (12)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7976,8 +10679,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &6603554154650714048
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7744601121662488428}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &8367751832008186891
 GameObject:
   m_ObjectHideFlags: 0
@@ -7989,9 +10728,10 @@ GameObject:
   - component: {fileID: 2709992494036213829}
   - component: {fileID: 6492646709565297668}
   - component: {fileID: 2036135487867656053}
-  m_Layer: 0
+  - component: {fileID: 2899603086109607838}
+  m_Layer: 8
   m_Name: YellowJelly (2)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8075,8 +10815,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &2899603086109607838
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8367751832008186891}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &8379874331753121044
 GameObject:
   m_ObjectHideFlags: 0
@@ -8088,9 +10864,10 @@ GameObject:
   - component: {fileID: 2476338644511772599}
   - component: {fileID: 3426524585304285876}
   - component: {fileID: 9106655348944363846}
-  m_Layer: 0
+  - component: {fileID: 8690554300723123102}
+  m_Layer: 8
   m_Name: YellowJelly (17)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8174,8 +10951,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &8690554300723123102
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8379874331753121044}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &8887607480724517508
 GameObject:
   m_ObjectHideFlags: 0
@@ -8188,9 +11001,10 @@ GameObject:
   - component: {fileID: 7059655371603346881}
   - component: {fileID: 9167899655625073253}
   - component: {fileID: 7156875512001196922}
-  m_Layer: 0
+  - component: {fileID: 3385108639713719307}
+  m_Layer: 8
   m_Name: SilverCoin (6)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8295,8 +11109,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &3385108639713719307
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8887607480724517508}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &8919109170891407330
 GameObject:
   m_ObjectHideFlags: 0
@@ -8309,9 +11159,10 @@ GameObject:
   - component: {fileID: 8504000689516081311}
   - component: {fileID: 9160591698590576914}
   - component: {fileID: 4219542496275697869}
-  m_Layer: 0
+  - component: {fileID: 3338425608335241537}
+  m_Layer: 8
   m_Name: SilverCoin (13)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8416,8 +11267,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &3338425608335241537
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8919109170891407330}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &8919495809579407624
 GameObject:
   m_ObjectHideFlags: 0
@@ -8430,9 +11317,10 @@ GameObject:
   - component: {fileID: 8579242604191307969}
   - component: {fileID: 9027831890047109633}
   - component: {fileID: 5299118183992395849}
-  m_Layer: 0
+  - component: {fileID: 1434317220933029549}
+  m_Layer: 8
   m_Name: SilverCoin (4)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8537,8 +11425,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &1434317220933029549
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8919495809579407624}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.359375
 --- !u!1 &9126247238764205910
 GameObject:
   m_ObjectHideFlags: 0
@@ -8550,9 +11474,10 @@ GameObject:
   - component: {fileID: 2367019467518927488}
   - component: {fileID: 6919126477084508974}
   - component: {fileID: 4940771293314792736}
-  m_Layer: 0
+  - component: {fileID: 8617434769480256947}
+  m_Layer: 8
   m_Name: PinkJelly (3)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8636,8 +11561,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &8617434769480256947
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9126247238764205910}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &9153626313665407079
 GameObject:
   m_ObjectHideFlags: 0
@@ -8649,9 +11610,10 @@ GameObject:
   - component: {fileID: 8050208353605263643}
   - component: {fileID: 4216963611087114216}
   - component: {fileID: 8836438872580308704}
-  m_Layer: 0
+  - component: {fileID: 1620516990028986868}
+  m_Layer: 8
   m_Name: PinkJelly (5)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8735,8 +11697,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &1620516990028986868
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9153626313665407079}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4296875
 --- !u!1 &9217653001550837292
 GameObject:
   m_ObjectHideFlags: 0
@@ -8749,9 +11747,10 @@ GameObject:
   - component: {fileID: 2913034568162971638}
   - component: {fileID: 7620902996527276484}
   - component: {fileID: 2807952133497832577}
-  m_Layer: 0
+  - component: {fileID: 4961780922473022586}
+  m_Layer: 8
   m_Name: GoldCoin (8)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8856,5 +11855,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481092cc15e545d48820e7d078f98942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionObjectArr: []
   autoRelease: 0
   releaseTime: 0
+--- !u!58 &4961780922473022586
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9217653001550837292}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4453125

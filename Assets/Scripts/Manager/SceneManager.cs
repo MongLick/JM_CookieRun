@@ -31,7 +31,6 @@ public class SceneManager : Singleton<SceneManager>
 
     public void LoadScene(string sceneName)
     {
-        Debug.Log($"Manager LoadScene : {sceneName}");
         StartCoroutine(LoadingRoutine(sceneName));
     }
 
