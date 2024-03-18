@@ -5,7 +5,7 @@ using UnityEngine;
 public class PrefabScroller : MonoBehaviour
 {
     [SerializeField] Transform[] children; // 자식 몇 개 있는지 확인하는 배열
-    [SerializeField] float scrollSpeed; // 배경이 움직이는 속도
+    public static float scrollSpeed = 5; // 배경이 움직이는 속도
 
     private void Update()
     {

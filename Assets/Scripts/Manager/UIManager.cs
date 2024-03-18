@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -16,6 +17,8 @@ public class UIManager : Singleton<UIManager>
     private Stack<PopUpUI> popUpStack = new Stack<PopUpUI>();
     private float prevTimeScale;
     private InGameUI curInGameUI;
+
+    
 
     [SerializeField] GameObject image;
 
@@ -65,7 +68,7 @@ public class UIManager : Singleton<UIManager>
         else
         {
             popUpBlocker.gameObject.SetActive(false);
-            Time.timeScale = prevTimeScale;
+            //Time.timeScale = prevTimeScale;
         }
     }
 
@@ -138,4 +141,6 @@ public class UIManager : Singleton<UIManager>
             return;
         image.SetActive(false);
     }
+
+    
 }

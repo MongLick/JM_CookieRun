@@ -28,6 +28,13 @@ public class PlayerController : MonoBehaviour
     private bool isJumping; // 점프중인지 체크
     private int jumpCount; // 점프 1번 하면 ++이 됨
 
+    public GameObject CountImage;
+
+    private void Start()
+    {
+        CountImage = GameObject.Find("Canvas/CountImage321");
+    }
+
     public void Jump() // 점프하면 호출
     {
         if (isJumping == false) // 점프중이
@@ -104,10 +111,13 @@ public class PlayerController : MonoBehaviour
 
     public void Die() // 죽었을 때 호출
     {
-        if (isGameover == true)
+        if (isGameover == true && isJumping == false)
         {
+            transform.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1);
             animator.SetBool("Die", true); // 애니메이터에서 true로 바꿔줌
-            Invoke("TimeCheck", 0.8f);
+            Invoke("TimeCheck", 1.3f);
+            hp = 0;
+            Slider.value = hp;
         }
     }
 
@@ -137,7 +147,7 @@ public class PlayerController : MonoBehaviour
         if (isGameover == false)
         {
             delta += Time.deltaTime;
-            hp -= delta * 0.5f;
+            hp -= delta * 0.7f;
             Slider.value = hp;
             delta = 0;
         }
@@ -147,7 +157,13 @@ public class PlayerController : MonoBehaviour
             isGameover = true;
             Die();
         }
+
+        if(CountImage != null)
+        {
+            CountImage.transform.position = rigid.transform.position + new Vector3(1.5f, 2.5f, 0);
+        }
     }
+
 
     [SerializeField] Slider Slider;
 
@@ -155,7 +171,6 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator CookieBlink()
     {
-        Debug.Log("1");
         transform.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.3f);
         yield return new WaitForSeconds(0.2f);
         transform.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
@@ -167,12 +182,41 @@ public class PlayerController : MonoBehaviour
         transform.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.3f);
         yield return new WaitForSeconds(0.2f);
         transform.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1);
+        yield return new WaitForSeconds(0.2f);
+        transform.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.3f);
+        yield return new WaitForSeconds(0.2f);
+        transform.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1);
+        yield return new WaitForSeconds(0.2f);
+        transform.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.3f);
+        yield return new WaitForSeconds(0.2f);
+        transform.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1);
         isHurt = true;
+        cookiegrowing = false;
+    }
+
+    private bool cookiegrowing = false;
+
+    private IEnumerator Cookiegrowing()
+    {
+        cookiegrowing = true;
+        transform.localScale = new Vector3(3f, 3f, 3f);
+        yield return new WaitForSeconds(3f);
+        transform.localScale = new Vector3(1f, 1f, 1f);
+        StartCoroutine(CookieBlink());
+    }
+
+    private IEnumerator runningFasting()
+    {
+        Scroller.scrollSpeed = 10;
+        PrefabScroller.scrollSpeed = 10;
+        yield return new WaitForSeconds(3f);
+        Scroller.scrollSpeed = 5;
+        PrefabScroller.scrollSpeed = 5;
     }
 
     public void TakeDamage()
     {
-        if (isHurt)
+        if (isHurt && cookiegrowing == false)
         {
             hp -= damage;
             Slider.value = hp;
@@ -181,11 +225,69 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public Text scoreTextCoin;
+    public Text scoreTextJelly;
+    public int coinScore = 0;
+    public int jellyScore = 0;
+    public int MaxHp = 100;
+
+    public void UpdateScoreTextCoin(int newScore)
+    {
+        scoreTextCoin.text = newScore + "";
+    }
+
+    public void UpdateScoreTextJelly(int newScore)
+    {
+        scoreTextJelly.text = newScore + "";
+    }
+
+    Scroller scroller = new Scroller();
+    PrefabScroller prefabScroller = new PrefabScroller();
+
     public void GetItem(string name)
     {
-        if(name == "potion")
+        if(name == "growing")
+        {
+            StartCoroutine(Cookiegrowing());
+        }
+
+        if(name == "runningFast")
+        {
+            StartCoroutine(runningFasting());
+        }
+
+        if (name == "potion")
         {
             hp += 30;
+            if (hp >= MaxHp)
+            {
+                hp = MaxHp;
+            }
+        }
+
+        if (name == "gold")
+        {
+            coinScore += 1000;
+            UpdateScoreTextCoin(coinScore);
+        }
+
+        if (name == "silver")
+        {
+            coinScore += 500;
+            UpdateScoreTextCoin(coinScore);
+        }
+
+        if (name == "pinkJelly")
+        {
+            jellyScore += 500;
+            UpdateScoreTextJelly(jellyScore);
+        }
+
+        if (name == "yellowJelly")
+        {
+            jellyScore += 1000;
+            UpdateScoreTextJelly(jellyScore);
         }
     }
 }
+

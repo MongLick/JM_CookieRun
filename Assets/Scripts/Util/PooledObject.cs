@@ -49,7 +49,7 @@ public class PooledObject : MonoBehaviour
             bool isMakeCoin = gameObject.name.Contains("MakeCoin");
             bool isMakeJelly = gameObject.name.Contains("MakeJelly");
             bool isPotion = gameObject.name.Contains("Potion");
-            bool iRunningFast = gameObject.name.Contains("RunningFast");
+            bool isRunningFast = gameObject.name.Contains("RunningFast");
 
             bool isGoldCoin = gameObject.name.Contains("GoldCoin");
             bool isSilverCoin = gameObject.name.Contains("SilverCoin");
@@ -61,6 +61,7 @@ public class PooledObject : MonoBehaviour
             {
                 Debug.Log("아이템1");
                 gameObject.SetActive(false);
+                player.GetItem("growing");
             }
             if (isMagnet)
             {
@@ -84,30 +85,35 @@ public class PooledObject : MonoBehaviour
                 player.GetItem("potion");
 
             }
-            if (iRunningFast)
+            if (isRunningFast)
             {
                 Debug.Log("아이템6");
                 gameObject.SetActive(false);
+                player.GetItem("runningFast");
             }
             if (isGoldCoin)
             {
                 Debug.Log("골드7");
                 gameObject.SetActive(false);
+                player.GetItem("gold");
             }
             if (isSilverCoin)
             {
                 Debug.Log("실버8");
                 gameObject.SetActive(false);
+                player.GetItem("silver");
             }
             if (isPinkJelly)
             {
                 Debug.Log("핑크9");
                 gameObject.SetActive(false);
+                player.GetItem("pinkJelly");
             }
             if (isYellowJelly)
             {
                 Debug.Log("노랑");
                 gameObject.SetActive(false);
+                player.GetItem("yellowJelly");
             }
         }
 
@@ -116,10 +122,17 @@ public class PooledObject : MonoBehaviour
             bool isDoubleJumpObstacle = gameObject.name.Contains("DoubleJumpObstacle");
             bool isJumpObstacle = gameObject.name.Contains("JumpObstacle");
             bool isSlideObstacle = gameObject.name.Contains("SlideObstacle");
+            bool isDeadZone = gameObject.name.Contains("DeadZone");
 
             if (isDoubleJumpObstacle || isJumpObstacle || isSlideObstacle)
             {
                 player.TakeDamage();
+            }
+
+            if(isDeadZone)
+            {
+                player.isGameover = true;
+                player.Die();
             }
         }
     }
