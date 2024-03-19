@@ -5,12 +5,13 @@ public class PooledObject : MonoBehaviour
 {
     [SerializeField] GameObject[] collisionObjectArr;
 
-
     [SerializeField] bool autoRelease;
     [SerializeField] float releaseTime;
 
     private ObjectPool pool;
     public ObjectPool Pool { get { return pool; } set { pool = value; } }
+
+    [SerializeField] Scroller scroller;
 
     public void OnEnable()
     {
@@ -42,8 +43,14 @@ public class PooledObject : MonoBehaviour
     {
         PlayerController player = collision.gameObject.GetComponent<PlayerController>();
 
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
+        if (scroller != null && player != null && collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
+            scroller.GetItem();
+        }
+
+        if (player != null && collision.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+
             bool isGrowing = gameObject.name.Contains("Growing");
             bool isMagnet = gameObject.name.Contains("Magnet");
             bool isMakeCoin = gameObject.name.Contains("MakeCoin");
@@ -83,7 +90,6 @@ public class PooledObject : MonoBehaviour
                 Debug.Log("æ∆¿Ã≈€5");
                 gameObject.SetActive(false);
                 player.GetItem("potion");
-
             }
             if (isRunningFast)
             {
@@ -129,7 +135,7 @@ public class PooledObject : MonoBehaviour
                 player.TakeDamage();
             }
 
-            if(isDeadZone)
+            if (isDeadZone)
             {
                 player.isGameover = true;
                 player.Die();

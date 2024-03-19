@@ -11,59 +11,64 @@ public enum ButtonType { None, Slide, Jump }
 public class PlayerController : MonoBehaviour
 {
     [Header("Components")]
-    [SerializeField] Rigidbody2D rigid; // 리지드바디
-    [SerializeField] Animator animator; // 애니메이터
-    [SerializeField] BoxCollider2D boxCollider; // 박스콜라이더
-    [SerializeField] CapsuleCollider2D capsuleCollider; // 캡슐콜라이더
+    [SerializeField] Rigidbody2D rigid;
+    [SerializeField] Animator animator;
+    [SerializeField] BoxCollider2D boxCollider;
+    [SerializeField] CapsuleCollider2D capsuleCollider;
     [SerializeField] BoxCollider2D groundChecker;
+    [SerializeField] PooledObject prefabScrollerPool1; // 수정된 부분
+    [SerializeField] PooledObject prefabScrollerPool2;
+    [SerializeField] PooledObject prefabScrollerPool3;
+    [SerializeField] CSVController csvController;
 
     [Header("Specs")]
-    [SerializeField] float jumpPower; // 얼마나 힘을 줄지
+    [SerializeField] float jumpPower;
 
     [Header("Events")]
-    public UnityEvent OnDied; // 죽었을 때 여러가지 작업하기 위해 이벤트로 구현
-
+    public UnityEvent OnDied;
     public UnityEvent<ButtonType> OnButtonEvent;
 
-    private bool isJumping; // 점프중인지 체크
-    private int jumpCount; // 점프 1번 하면 ++이 됨
+    private bool isJumping;
+    private int jumpCount;
 
     public GameObject CountImage;
 
     private void Start()
     {
         CountImage = GameObject.Find("Canvas/CountImage321");
+        prefabScrollerPool1 = csvController.ReturnCurrentMap1();
+        prefabScrollerPool2 = csvController.ReturnCurrentMap2();
+        prefabScrollerPool3 = csvController.ReturnCurrentMap3();
     }
 
-    public void Jump() // 점프하면 호출
+    public void Jump()
     {
-        if (isJumping == false) // 점프중이
+        if (isJumping == false)
         {
-            if (jumpCount == 0) // 점프 카운터 0일 때 실행
+            if (jumpCount == 0)
             {
                 animator.SetBool("Slide", false);
-                rigid.velocity = Vector2.up * jumpPower; // 점프 높이
-                animator.SetBool("Jump", true); // 애니메이터에서 true로 바꿔줌
-                jumpCount++; // 점프 카운터 ++
+                rigid.velocity = Vector2.up * jumpPower;
+                animator.SetBool("Jump", true);
+                jumpCount++;
             }
-
-            else if (jumpCount == 1) // 점프 카운터 1일 때 실행
+            else if (jumpCount == 1)
             {
                 animator.SetBool("Slide", false);
-                isJumping = true; // 점프 중 공중에서 점프하는거 막는 코드
-                rigid.velocity = Vector2.up * jumpPower; // 점프 높이
-                animator.SetBool("DoubleJump", true); // 애니메이터에서 true로 바꿔줌
-                animator.SetBool("Jump", false); // 애니메이터에서 false로 바꿔줌
+                isJumping = true;
+                rigid.velocity = Vector2.up * jumpPower;
+                animator.SetBool("DoubleJump", true);
+                animator.SetBool("Jump", false);
             }
         }
     }
 
-    private void OnJump(InputValue value) // 한 번 누르면 실행
+    private void OnJump(InputValue value)
     {
-        if (value.isPressed) // 눌렸을 때 호출 인풋 액션도 사용하기 위해 만든거임
+        if (value.isPressed)
         {
             SlideEnd();
-            Jump(); // 점프 함수 호출
+            Jump();
             OnButtonEvent?.Invoke(ButtonType.Jump);
         }
         else
@@ -72,33 +77,30 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void SlideStart() // 슬라이드 시작
+    public void SlideStart()
     {
-        animator.SetBool("Slide", true); // 애니메이터에서 true로 바꿔줌
-
-        this.boxCollider.enabled = true; // 박스 콜라이더 온 
-        this.capsuleCollider.enabled = false; // 캡슐 콜라이더 오프
+        animator.SetBool("Slide", true);
+        this.boxCollider.enabled = true;
+        this.capsuleCollider.enabled = false;
     }
 
-    public void SlideEnd() // 슬라이드 끝
+    public void SlideEnd()
     {
-        animator.SetBool("Slide", false); // 애니메이터에서 false로 바꿔줌
-
-        this.capsuleCollider.enabled = true; // 캡슐 콜라이더 오프
-        this.boxCollider.enabled = false; // 박스 콜라이더 온
+        animator.SetBool("Slide", false);
+        this.capsuleCollider.enabled = true;
+        this.boxCollider.enabled = false;
     }
 
-    private void OnSlide(InputValue value) // 인풋 액션에서 눌렀는지 떼었는지 알려줌
+    private void OnSlide(InputValue value)
     {
-        if (value.isPressed) // 누름
+        if (value.isPressed)
         {
-
-            SlideStart(); // Start 함수 호출
+            SlideStart();
             OnButtonEvent?.Invoke(ButtonType.Slide);
         }
         else
         {
-            SlideEnd(); // End 함수 호출
+            SlideEnd();
             OnButtonEvent?.Invoke(ButtonType.None);
         }
     }
@@ -109,12 +111,12 @@ public class PlayerController : MonoBehaviour
     public float delta;
     public float damageTime;
 
-    public void Die() // 죽었을 때 호출
+    public void Die()
     {
         if (isGameover == true && isJumping == false)
         {
             transform.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1);
-            animator.SetBool("Die", true); // 애니메이터에서 true로 바꿔줌
+            animator.SetBool("Die", true);
             Invoke("TimeCheck", 1.3f);
             hp = 0;
             Slider.value = hp;
@@ -128,12 +130,12 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground")) // 뭐가 닿았으면
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
-            isJumping = false; // 점프를 안 하고 있다로 변경됨
-            animator.SetBool("Jump", false); // 점프 애니메이션 꺼줌
-            jumpCount = 0; // 점프 카운터 초기화
-            animator.SetBool("DoubleJump", false); // // 더블점프 애니메이션 꺼줌
+            isJumping = false;
+            animator.SetBool("Jump", false);
+            jumpCount = 0;
+            animator.SetBool("DoubleJump", false);
         }
     }
 
@@ -158,12 +160,11 @@ public class PlayerController : MonoBehaviour
             Die();
         }
 
-        if(CountImage != null)
+        if (CountImage != null)
         {
             CountImage.transform.position = rigid.transform.position + new Vector3(1.5f, 2.5f, 0);
         }
     }
-
 
     [SerializeField] Slider Slider;
 
@@ -205,15 +206,6 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(CookieBlink());
     }
 
-    private IEnumerator runningFasting()
-    {
-        Scroller.scrollSpeed = 10;
-        PrefabScroller.scrollSpeed = 10;
-        yield return new WaitForSeconds(3f);
-        Scroller.scrollSpeed = 5;
-        PrefabScroller.scrollSpeed = 5;
-    }
-
     public void TakeDamage()
     {
         if (isHurt && cookiegrowing == false)
@@ -241,53 +233,53 @@ public class PlayerController : MonoBehaviour
         scoreTextJelly.text = newScore + "";
     }
 
-    Scroller scroller = new Scroller();
-    PrefabScroller prefabScroller = new PrefabScroller();
-
     public void GetItem(string name)
     {
-        if(name == "growing")
+        if (name == "growing")
         {
             StartCoroutine(Cookiegrowing());
         }
-
-        if(name == "runningFast")
+        else if (name == "runningFast")
         {
-            StartCoroutine(runningFasting());
-        }
+            if (prefabScrollerPool1.gameObject.activeSelf)
+            {
+                PrefabScroller instance1 = prefabScrollerPool1.GetComponent<PrefabScroller>();
+                PrefabScroller instance2 = prefabScrollerPool2.GetComponent<PrefabScroller>();
+                PrefabScroller instance3 = prefabScrollerPool3.GetComponent<PrefabScroller>();
 
-        if (name == "potion")
+                instance1.GetItem();
+                instance2.GetItem();
+                instance3.GetItem();
+            }
+        }
+        else if (name == "potion")
         {
             hp += 30;
             if (hp >= MaxHp)
             {
                 hp = MaxHp;
             }
+            Slider.value = hp;
         }
-
-        if (name == "gold")
+        else if (name == "gold")
         {
             coinScore += 1000;
             UpdateScoreTextCoin(coinScore);
         }
-
-        if (name == "silver")
+        else if (name == "silver")
         {
             coinScore += 500;
             UpdateScoreTextCoin(coinScore);
         }
-
-        if (name == "pinkJelly")
+        else if (name == "pinkJelly")
         {
             jellyScore += 500;
             UpdateScoreTextJelly(jellyScore);
         }
-
-        if (name == "yellowJelly")
+        else if (name == "yellowJelly")
         {
             jellyScore += 1000;
             UpdateScoreTextJelly(jellyScore);
         }
     }
 }
-

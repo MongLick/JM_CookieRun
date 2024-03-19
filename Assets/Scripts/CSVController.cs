@@ -28,24 +28,35 @@ public class CSVController : MonoBehaviour
         Manager.Pool.GetPool(FirstPattern, new Vector3(x, y, 0), Quaternion.identity);
         yield return new WaitForSeconds(13f);
 
+
+
         PooledObject pooledObject;
+
+        x = datas.stage[1].JellyXpos;
+        y = datas.stage[1].JellyYpos;
+
+        pooledObject = Manager.Pool.GetPool(SecondPattern, new Vector3(x, y, 0), Quaternion.identity);
+        pooledObject.Init();
+        yield return new WaitForSeconds(15f);
+        Debug.Log("Áö±Ý");
+
+        x = datas.stage[2].JellyXpos;
+        y = datas.stage[2].JellyYpos;
 
         while (true)
         {
-            x = datas.stage[1].JellyXpos;
-            y = datas.stage[1].JellyYpos;
-
-            pooledObject = Manager.Pool.GetPool(SecondPattern, new Vector3(x, y, 0), Quaternion.identity);
-            pooledObject.Init();
-            yield return new WaitForSeconds(22f);
-
             pooledObject = Manager.Pool.GetPool(ThirdPattern, new Vector3(x, y, 0), Quaternion.identity);
             pooledObject.Init();
-            yield return new WaitForSeconds(22f);
+            yield return new WaitForSeconds(15f);
+            
 
             pooledObject = Manager.Pool.GetPool(FirstPattern, new Vector3(x, y, 0), Quaternion.identity);
             pooledObject.Init();
-            yield return new WaitForSeconds(22f);
+            yield return new WaitForSeconds(15f);
+
+            pooledObject = Manager.Pool.GetPool(SecondPattern, new Vector3(x, y, 0), Quaternion.identity);
+            pooledObject.Init();
+            yield return new WaitForSeconds(15f);
         }
     }
 
@@ -74,5 +85,20 @@ public class CSVController : MonoBehaviour
         public int stageID;
         public float JellyXpos;
         public float JellyYpos;
+    }
+
+    public PooledObject ReturnCurrentMap1()
+    {
+        return FirstPattern;
+    }
+
+    public PooledObject ReturnCurrentMap2()
+    {
+        return SecondPattern;
+    }
+
+    public PooledObject ReturnCurrentMap3()
+    {
+        return ThirdPattern;
     }
 }

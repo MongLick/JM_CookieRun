@@ -9,6 +9,11 @@
       "stageID": "1",
       "JellyXpos": "75",
       "JellyYpos": "-2.1"
+    },
+    {
+      "stageID": "2",
+      "JellyXpos": "110",
+      "JellyYpos": "-2.1"
     }
   ]
 }
